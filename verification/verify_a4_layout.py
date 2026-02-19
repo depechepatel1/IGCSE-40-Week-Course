@@ -1,11 +1,12 @@
-from playwright.sync_api import sync_playwright, expect
 import os
+from playwright.sync_api import sync_playwright
 
 def run():
     file_path = os.path.abspath("Week_01.html")
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page()
+        # Launch page with full viewport to capture everything
+        page = browser.new_page(viewport={'width': 1000, 'height': 6000})
         page.goto(f"file://{file_path}")
 
         # 1. Check there are exactly 5 A4 pages
@@ -23,10 +24,13 @@ def run():
         print(f"Page 1 Title: {title_text}")
         assert "IGCSE / IELTS" in title_text, "Page 1 title incorrect"
 
-        # 3. Check Page 2 is Blank
+        # 3. Check Page 2 is Notes Page (formerly Blank)
         page2 = pages.nth(1)
+        # Verify it has the notes window class
+        assert page2.locator(".notes-window").count() > 0, "Page 2 should contain a .notes-window"
+        # Verify text is gone
         text2 = page2.inner_text()
-        assert "intentionally left blank" in text2, "Page 2 should mention 'intentionally left blank'"
+        assert "intentionally left blank" not in text2, "Page 2 should NOT mention 'intentionally left blank'"
 
         # 4. Check Page 3 is Lesson Plan
         page3 = pages.nth(2)
@@ -35,15 +39,17 @@ def run():
 
         # 5. Check Page 4 contains Sections 1-6
         page4 = pages.nth(3)
-        assert page4.locator("text=Section 1. Weekly Grammar Point").count() > 0, "Page 4 should contain Section 1"
-        assert page4.locator("text=Section 6. Circuit Prompt & Spider Diagram").count() > 0, "Page 4 should contain Section 6"
+        # Check for Section 1
+        assert page4.locator("h4", has_text="Section 1. Weekly Grammar Point").count() > 0, "Page 4 should contain Section 1"
+        # Check for Section 6
+        assert page4.locator("h4", has_text="Section 6. Circuit Prompt & Spider Diagram").count() > 0, "Page 4 should contain Section 6"
         # Ensure Section 7 is NOT on Page 4
-        assert page4.locator("text=Section 7. Model Answer").count() == 0, "Page 4 should NOT contain Section 7"
+        assert page4.locator("h4", has_text="Section 7. Model Answer").count() == 0, "Page 4 should NOT contain Section 7"
 
         # 6. Check Page 5 contains Sections 7-13
         page5 = pages.nth(4)
-        assert page5.locator("text=Section 7. Model Answer").count() > 0, "Page 5 should contain Section 7"
-        assert page5.locator("text=Section 13. Post-Homework Task").count() > 0, "Page 5 should contain Section 13"
+        assert page5.locator("h4", has_text="Section 7. Model Answer").count() > 0, "Page 5 should contain Section 7"
+        assert page5.locator("h4", has_text="Section 13. Post-Homework Task").count() > 0, "Page 5 should contain Section 13"
 
         # 7. Check Dimensions (approximate)
         box = page1.bounding_box()
@@ -52,6 +58,7 @@ def run():
 
         # Allow some float tolerance
         assert 790 <= box['width'] <= 800, f"Page width {box['width']} is not close to 210mm (approx 794px)"
+        # Use >= 1120 because min-height is 297mm
         assert box['height'] >= 1120, f"Page height {box['height']} is less than 297mm (approx 1123px)"
 
         # Take a screenshot
