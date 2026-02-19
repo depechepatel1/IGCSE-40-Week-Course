@@ -19,7 +19,7 @@
         }
         .a4-page {
             width: 210mm;
-            min-height: 297mm;
+            height: 297mm; /* Changed from min-height to height for flexbox filling */
             background: white;
             margin-bottom: 40px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -27,6 +27,8 @@
             box-sizing: border-box;
             position: relative;
             overflow: hidden;
+            display: flex; /* Enable flex layout for children */
+            flex-direction: column;
         }
         @media print {
             body {
@@ -39,7 +41,7 @@
                 margin: 0;
                 page-break-after: always;
                 width: 100%;
-                min-height: 100vh;
+                height: 100vh; /* Ensure full page height for flexbox */
             }
         }
 
@@ -170,13 +172,20 @@
         .half-width { width: 48%; }
 
         /* Spider Diagram Styles */
+        .section-spider {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow the section to grow */
+        }
         .spider-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 150px 150px;
+            grid-template-rows: 1fr 1fr; /* Use fractional units to fill available height */
             gap: 10px;
             position: relative;
             margin-top: 15px;
+            flex-grow: 1; /* Allow the grid itself to grow */
+            min-height: 300px; /* Ensure a reasonable minimum height */
         }
         .spider-quadrant {
             border-radius: 10px;
@@ -212,6 +221,19 @@
             z-index: 10;
             text-align: center;
         }
+
+        /* Writing Space Styles */
+        .section-writing {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow section to grow */
+        }
+        .writing-lines-container {
+            flex-grow: 1; /* Allow lines container to fill space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly; /* Distribute lines evenly */
+        }
     </style>
 </head>
 <body>
@@ -232,8 +254,9 @@
 </div>
 
 <!-- PAGE 2: NOTES PAGE (FULL PAGE) -->
-<div class="a4-page" style="background-color: #fafafa; padding: 0;">
-    <div class="notes-window" style="border-radius: 0; border: none; box-shadow: none;">
+<!-- Re-added padding: 20mm to match other pages, but let the window fill the content box -->
+<div class="a4-page" style="background-color: #fafafa;">
+    <div class="notes-window">
         <!-- Writing lines created by CSS background gradient -->
     </div>
 </div>
@@ -370,7 +393,7 @@
     </div>
 
     <!-- Dark Orange Section -->
-    <div class="floating-window" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
+    <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
         <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
@@ -410,16 +433,19 @@
     </div>
 
     <!-- Gray Section -->
-    <div class="floating-window" style="border-left: 6px solid #7f8c8d; background-color: #f2f3f4;">
+    <div class="floating-window section-writing" style="border-left: 6px solid #7f8c8d; background-color: #f2f3f4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 8. Writing Space (10 mins)</h4>
         <p style="font-size: 0.9em; color: gray;"><em>Draft your keywords and complex sentence here (Do not write a full paragraph):</em></p>
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
-        <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 25px 0;">
+        <div class="writing-lines-container">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+        </div>
     </div>
 
     <!-- Blue Section -->
