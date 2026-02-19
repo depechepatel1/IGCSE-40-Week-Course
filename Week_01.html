@@ -234,6 +234,26 @@
             flex-direction: column;
             justify-content: space-evenly; /* Distribute lines evenly */
         }
+
+        /* Exit Ticket Styles */
+        .section-exit {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow section to grow */
+        }
+        .exit-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .feedback-box {
+            flex-grow: 1;
+            border: 1px dashed #bdc3c7;
+            background-color: #fdfefe;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -486,9 +506,17 @@
     </div>
 
     <!-- Orange Section (Exit) -->
-    <div class="floating-window" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
-        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Fix the Error (Play vs. Do vs. Go):</strong> Write the correct verb next to the sport.<br><br><br><br>1. ___________ basketball &nbsp;&nbsp;&nbsp;&nbsp; 2. ___________ yoga &nbsp;&nbsp;&nbsp;&nbsp; 3. ___________ swimming</p>
+    <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. What did you learn today? (10 mins)</h4>
+        <div class="exit-content-wrapper">
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Play vs. Do vs. Go):</strong> Write the correct verb next to the sport.<br><br><br><br>1. ___________ basketball &nbsp;&nbsp;&nbsp;&nbsp; 2. ___________ yoga &nbsp;&nbsp;&nbsp;&nbsp; 3. ___________ swimming</p>
+            <div class="feedback-box">
+                <strong>Errors we fixed on the board:</strong>
+            </div>
+            <div class="feedback-box">
+                <strong>New language that stood out:</strong>
+            </div>
+        </div>
     </div>
 
     <div class="flex-row">
