@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 1: Leisure & Free Time (Unit 1)</title>
+    <!-- Import Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #e0e0e0;
             margin: 0;
             padding: 40px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            color: #2c3e50;
         }
         .a4-page {
             width: 210mm;
@@ -42,7 +45,8 @@
 
         /* Cover Page Specific Styles */
         .cover-page {
-            background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+            /* Updated gradient for a softer, more professional look */
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
             display: flex;
             flex-direction: column;
             justify-content: center; /* Vertically center the content */
@@ -55,42 +59,58 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* Wrap content in a floating window */
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ccc;
+            /* Wrap content in a floating window with pastel background */
+            background: #fdfefe; /* Very light off-white/cyan tint */
+            border: 1px solid #d5dbdb;
             border-radius: 15px;
-            padding: 40px;
-            margin: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Large drop shadow */
+            padding: 50px 40px;
+            margin: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Softer, larger shadow */
         }
         .cover-title {
-            font-size: 3.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
-            font-weight: bold;
-            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif; /* Elegant serif for title */
+            font-size: 2.8em; /* Reduced size */
+            color: #2c3e50; /* Dark slate */
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
         .cover-subtitle {
-            font-size: 2em;
-            color: #e74c3c;
-            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6em;
+            color: #e67e22; /* Muted orange/carrot instead of harsh red */
+            margin-bottom: 35px;
             text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
         }
         .cover-week {
-            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
             color: #34495e;
-            background: rgba(255,255,255,0.7);
-            padding: 10px 30px;
+            background: #ecf0f1; /* Light gray pill */
+            padding: 12px 35px;
             border-radius: 50px;
-            margin-bottom: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 45px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border: 1px solid #bdc3c7;
+        }
+        .target-band {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 10px;
         }
         .cover-footer {
-            font-size: 1em;
-            color: #7f8c8d;
-            margin-top: 20px;
-            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            color: #95a5a6;
+            margin-top: 40px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         /* Standard Content Styles */
@@ -118,19 +138,20 @@
             box-sizing: border-box;
         }
 
-        .blue-text { color: blue; }
-        .yellow-highlight { background-color: yellow; }
+        .blue-text { color: #2980b9; font-weight: bold; }
+        .yellow-highlight { background-color: #fff9c4; padding: 0 2px; border-radius: 2px; }
 
         /* Table Styling */
         table { width: 100%; border-collapse: collapse; font-size: 0.9em; box-shadow: 2px 2px 8px rgba(0,0,0,0.05); }
         th {
             background-color: #d6eaf8; /* Pastel Blue Header */
             color: #2c3e50;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #bdc3c7;
             text-align: left;
+            font-family: 'Montserrat', sans-serif;
         }
-        td { padding: 10px; border: 1px solid #bdc3c7; }
+        td { padding: 10px; border: 1px solid #bdc3c7; line-height: 1.4; }
 
         /* Force Pastel Yellow Background on all body rows for Lesson Plan and Vocab tables */
         .lesson-plan-table tbody tr {
@@ -140,7 +161,8 @@
             background-color: #fff9c4 !important; /* Pastel Yellow */
         }
 
-        h1, h2, h3, h4 { margin-top: 0; }
+        h1, h2, h3, h4 { margin-top: 0; font-family: 'Montserrat', sans-serif; }
+        h4 { font-weight: 700; letter-spacing: 0.5px; }
 
         /* Utility */
         .flex-row { display: flex; justify-content: space-between; margin-bottom: 15px; }
@@ -200,7 +222,7 @@
         <div class="cover-week">Week 1: Leisure & Free Time (Unit 1)</div>
 
         <h2 class="cover-subtitle">Semester 1: Foundation Phase</h2>
-        <p style="color: #555; font-size: 1.2em;">Band 5.0 ➔ 6.0 Target</p>
+        <p class="target-band">Band 5.0 ➔ 6.0 Target</p>
 
         <div class="cover-footer">
             © Jinhua New Oriental Academy English Department Curriculum
