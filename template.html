@@ -106,7 +106,7 @@
 
         /* Note Paper Style for Page 2 */
         .notes-window {
-            height: 90%; /* Fill most of the page */
+            height: 100%; /* Fill the page */
             background-color: #fff;
             background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
             background-size: 100% 1.5em; /* Line spacing */
@@ -208,9 +208,9 @@
     </div>
 </div>
 
-<!-- PAGE 2: BLANK PAGE (Notes) -->
-<div class="a4-page" style="background-color: #fafafa;">
-    <div class="notes-window">
+<!-- PAGE 2: NOTES PAGE (FULL PAGE) -->
+<div class="a4-page" style="background-color: #fafafa; padding: 0;">
+    <div class="notes-window" style="border-radius: 0; border: none; box-shadow: none;">
         <!-- Writing lines created by CSS background gradient -->
     </div>
 </div>
@@ -337,7 +337,7 @@
 
     <!-- Teal Section (Input) -->
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
-        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Transcoded Input</h4>
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. IGCSE Textbook Paragraph for Pronunciation</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
             {{ transcoded_input }}
         </p>
