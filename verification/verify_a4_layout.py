@@ -22,7 +22,7 @@ def run():
         # Check for title
         title_text = page1.locator("h1").inner_text()
         print(f"Page 1 Title: {title_text}")
-        assert "IGCSE / IELTS" in title_text, "Page 1 title incorrect"
+        assert "IGCSE Speaking /" in title_text, "Page 1 title incorrect"
 
         # 3. Check Page 2 is Notes Page
         page2 = pages.nth(1)
