@@ -1,0 +1,150 @@
+🤖 GEMINI EXECUTION BLUEPRINT: 40-WEEK IGCSE/IELTS SPEAKING COURSE
+📌 PART A: Core Rules of Engagement (Anti-Hallucination & IGCSE Protocol)
+When the user prompts: "Gemini, generate the HTML for Batch [X]", I must strictly obey the following rules to prevent token overflow and ensure pedagogical consistency, while strictly adhering to the Cambridge IGCSE Speaking Criteria:
+
+Batch Processing: Never generate more than 5 weeks at a time.
+
+Data Injection: For each week, I must look at the provided "Vocabulary Tables" data and extract exactly: 6 New Words + 2 Recycled Words + 2 Idioms.
+
+IGCSE Speaking Criteria Alignment: All generated texts and tasks must model the core IGCSE assessment goals:
+
+Expansion (Content 1): Exemplify (just to name a few), justify (and that is why), compare/contrast (just like, while), or speculate (I suppose).
+
+Coherence (Content 2): Paraphrase naturally and use targeted discourse markers (addition, time/sequence, cause/effect, contrast).
+
+Interaction (Content 3): Prompt conversational skills like initiating, responding, asking for clarification (e.g., "Sorry, did you mean...?"), and turn-taking in the AfL Listener Task.
+
+Lexical Range (Content 4): Actively use synonyms to avoid repetition, along with set collocations and the week's idioms.
+
+Pronunciation (Content 5): Ensure the Weekly Pronunciation point explicitly targets syllable stress, sentence stress (for contrast/emphasis), or intonation patterns (rising/falling).
+
+Drafting the Input & Model Answer: I must write the Transcoded Input (~150 words) and Model Answer (~150 words) ensuring that I:
+
+Bold all 10 vocabulary items (6 new, 2 recycled, 2 idioms) in both texts.
+
+Wrap natural discourse markers and expansion phrases in <span style="color: blue;">...</span>.
+
+Dynamic Grammar Scaffolding (Content 4): For Weeks 1–5, write exactly ONE complex sentence per text. For Weeks 6–40, write exactly TWO complex sentences per text. Wrap them in <mark style="background-color: yellow;">...</mark>.
+
+Spaced Retrieval: Warm-up Question 1 must ALWAYS force the student to use the previous week's vocabulary or grammar.
+
+HTML Output: I must use the exact 4-page A4 structure with the 13 Floating Windows defined in the JSON prototype. I must include the specific minute timings in the Section Headings.
+
+📌 PART B: Lesson Creation Architecture Note (For Data Parsing)
+Note to Gemini Jules / Python Parser: When creating the parse_data.py script to parse the JSON/CSV data files for HTML generation:
+
+Lazy Loading: Only read and process the specific weeks' data that is being used in the current batch task. Do not parse the entire 40-week dataset into memory if only generating a 5-week subset.
+
+Iteration Optimization: When iterating over the dataframe, you MUST replace iterrows() with itertuples() for optimized, faster, and memory-efficient parsing performance.
+
+📌 PART C: The 40-Week Spiral Curriculum Map (Lucantoni Adaptation)
+Note to Gemini: Weeks 1–20 focus on concrete IELTS Part 1 & 2 topics (Foundation). Weeks 21–40 revisit the exact same Lucantoni 20 themes but focus on IELTS Part 3 abstract logic, societal impacts, and advanced grammar.
+
+📦 BATCH 1: Foundation Phase (Weeks 1–5)
+Focus: Basic habits, descriptions, and past events. (1 Complex Sentence per text)
+
+Week 1 (Unit 1: Leisure/Free Time): Grammar: Adverbs of Frequency & Gerunds | Pronunciation: Connected Speech (Consonant to Vowel) | Prompt: Describe a regular hobby.
+
+Week 2 (Unit 2: TV & Media): Grammar: Comparatives & Superlatives | Pronunciation: Word Stress in multi-syllable adjectives | Prompt: Describe a memorable movie/show.
+
+Week 3 (Unit 3: Food & Diet): Grammar: Quantifiers (too much/many) & Present Perfect | Pronunciation: Long Vowel Sounds | Prompt: Describe a memorable meal.
+
+Week 4 (Unit 4: Transport): Grammar: First Conditional (If + Present, Will) | Pronunciation: Sentence stress in conditionals | Prompt: Describe a long journey.
+
+Week 5 (Unit 5: Holidays): Grammar: Past Continuous vs. Past Simple | Pronunciation: Weak forms of "was/were" | Prompt: Describe an unforgettable trip.
+
+📦 BATCH 2: Foundation Phase (Weeks 6–10)
+Focus: Experiences, obligations, and routines. (2 Complex Sentences per text BEGINS)
+
+Week 6 (Unit 6: Learning/Education): Grammar: Used to & Would (Past habits) | Pronunciation: Enunciation of "-ed" endings | Prompt: Describe a favorite school subject.
+
+Week 7 (Unit 7: Careers): Grammar: Modal Verbs of Obligation (must, have to, should) | Pronunciation: Silent letters (e.g., colleague, resign) | Prompt: Describe a job you would like to have.
+
+Week 8 (Unit 8: Work & Money): Grammar: Second Conditional (If + Past, Would) | Pronunciation: Contractions (I'd, wouldn't) | Prompt: Describe something expensive you saved up for.
+
+Week 9 (Unit 9: Sports): Grammar: Present Perfect Continuous (have been V-ing) | Pronunciation: Rhythm and pacing in lists | Prompt: Describe a sports match you watched or played.
+
+Week 10 (Unit 10: People/Relationships): Grammar: Defining Relative Clauses (who, which, that) | Pronunciation: Pausing at relative pronouns | Prompt: Describe a friend who is important to you.
+
+📦 BATCH 3: Foundation Phase (Weeks 11–15)
+Focus: Passive structures, continuous actions, and hypothetical situations. (2 Complex Sentences per text)
+
+Week 11 (Unit 11: Organizations/Volunteering): Grammar: Passive Voice (Present & Past) | Pronunciation: Stress on the main verb in passive structures | Prompt: Describe a time you helped someone.
+
+Week 12 (Unit 12: Achievements): Grammar: Past Perfect (had + V3) | Pronunciation: Dropping the 'h' in rapid speech ("I'd") | Prompt: Describe a difficult task you succeeded in.
+
+Week 13 (Unit 13: Environment): Grammar: Future Intentions (going to vs. will) | Pronunciation: Schwa sound in "going to" (gonna) | Prompt: Describe a beautiful natural place.
+
+Week 14 (Unit 14: Technology): Grammar: Too / Enough + Adjective | Pronunciation: Hard vs. Soft 'th' sounds | Prompt: Describe a piece of technology you use daily.
+
+Week 15 (Unit 15: Culture/Customs): Grammar: Question Tags (isn't it? do they?) | Pronunciation: Rising vs. Falling intonation for question tags | Prompt: Describe a traditional festival.
+
+📦 BATCH 4: Foundation Phase (Weeks 16–20)
+Focus: Advanced basics and future predictions. (2 Complex Sentences per text)
+
+Week 16 (Unit 16: Modern Living/City vs Country): Grammar: As... As (Comparisons of equality) | Pronunciation: Linking 's' sounds | Prompt: Describe the city or town where you live.
+
+Week 17 (Unit 17: Fashion/Shopping): Grammar: Causative Verbs (have/get something done) | Pronunciation: Syllable counting | Prompt: Describe a favorite item of clothing.
+
+Week 18 (Unit 18: Entertainment/Arts): Grammar: Adjective Order | Pronunciation: Expressive intonation for opinions | Prompt: Describe an art exhibition or performance.
+
+Week 19 (Unit 19: Health/Medicine): Grammar: Reported Speech | Pronunciation: Vowel shifting in reported speech | Prompt: Describe a time you were sick and recovered.
+
+Week 20 (Unit 20: The Future): Grammar: Future Continuous (will be V-ing) | Pronunciation: Stressing the '-ing' suffix | Prompt: Describe your life 10 years from now.
+
+📦 BATCH 5: Advanced Phase (Weeks 21–25)
+Focus: Revisiting Units 1-5 for IELTS Part 3 (Abstract Logic & Societal Impacts). (2 Complex Sentences per text)
+
+Week 21 (Unit 1: Leisure): Grammar: Hedging (It could be argued...). | Prompt: How has technology changed societal relaxation?
+
+Week 22 (Unit 2: TV & Media): Grammar: Complex Comparisons. | Prompt: What are the dangers of media bias and manipulation?
+
+Week 23 (Unit 3: Food & Diet): Grammar: Third Conditional. | Prompt: Why is there a global epidemic of unhealthy eating?
+
+Week 24 (Unit 4: Transport): Grammar: Future Perfect. | Prompt: How can cities solve gridlock sustainably?
+
+Week 25 (Unit 5: Holidays): Grammar: Non-defining Relative Clauses. | Prompt: What is the cultural impact of commercializing pristine destinations?
+
+📦 BATCH 6: Advanced Phase (Weeks 26–30)
+Focus: Revisiting Units 6-10 for IELTS Part 3. (2 Complex Sentences per text)
+
+Week 26 (Unit 6: Education): Grammar: Mixed Conditionals. | Prompt: Should schools prioritize theoretical learning or practical skills?
+
+Week 27 (Unit 7: Careers): Grammar: Passive Reporting Verbs (It is believed...). | Prompt: How is the corporate hierarchy changing?
+
+Week 28 (Unit 8: Work & Money): Grammar: Participle Clauses (Having worked hard...). | Prompt: What are the consequences of a materialistic society?
+
+Week 29 (Unit 9: Sports): Grammar: Inversion (Rarely do we...). | Prompt: Is the high salary of professional athletes justified?
+
+Week 30 (Unit 10: Relationships): Grammar: Cleft Sentences (What I find most interesting is...). | Prompt: How has digital communication affected human empathy?
+
+📦 BATCH 7: Advanced Phase (Weeks 31–35)
+Focus: Revisiting Units 11-15 for IELTS Part 3. (2 Complex Sentences per text)
+
+Week 31 (Unit 11: Volunteering): Grammar: Subjunctive / Wishes. | Prompt: Do corporations have a moral duty to engage in philanthropy?
+
+Week 32 (Unit 12: Achievements): Grammar: Advanced Gerunds. | Prompt: What role do resilience and tenacity play in overcoming obstacles?
+
+Week 33 (Unit 13: Environment): Grammar: Double Comparatives (The more... the more...). | Prompt: Is irreversible ecological damage inevitable?
+
+Week 34 (Unit 14: Technology): Grammar: Future in the Past (was going to). | Prompt: How will workplace automation force society to adapt?
+
+Week 35 (Unit 15: Culture): Grammar: Ellipsis & Substitution. | Prompt: Will globalization inevitably homogenize diverse cultures?
+
+📦 BATCH 8: Advanced Phase (Weeks 36–40)
+Focus: Revisiting Units 16-20 for IELTS Part 3 (High-level debate & speculation). (2 Complex Sentences per text)
+
+Week 36 (Unit 16: Modern Living): Grammar: Concessive Clauses (Much as I like...). | Prompt: Does rapid urbanization create better amenities or social alienation?
+
+Week 37 (Unit 17: Fashion): Grammar: 'Whatever/Whenever' Clauses. | Prompt: How does consumerism affect our perception of status?
+
+Week 38 (Unit 18: Entertainment): Grammar: Noun Phrases as Subjects. | Prompt: Why is contemporary abstract art often controversial?
+
+Week 39 (Unit 19: Health): Grammar: So / Such... that. | Prompt: As longevity increases, how must society adapt to holistic care?
+
+Week 40 (Unit 20: The Future): Grammar: Bound to / Due to / On the verge of. | Prompt: Speculating on the next 50 years, what is humanity's greatest dilemma?
+
+📌 PART D: The Batch Generation Command
+When you are ready to begin, you will provide the "Vocabulary Tables" data and give me the following exact command:
+
+"Gemini, initialize Batch [X] (Weeks Y to Z). Use the attached Vocabulary Tables. Follow the 4-Page A4 Master Prompt layout exactly. Inject the WALT/WILF, Grammar, Phonics, and Prompts listed in the 40-Week Execution Blueprint. Generate the HTML code now."
