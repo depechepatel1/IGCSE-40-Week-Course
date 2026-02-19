@@ -1,0 +1,841 @@
+{
+  "curriculum": [
+    {
+      "week": 1,
+      "unit": 1,
+      "theme": "Leisure/Free Time",
+      "newWords": [
+        {"word": "Pastime", "pos": "N", "zh": "消遣 / 娱乐活动", "forms": ""},
+        {"word": "Unwind", "pos": "V", "zh": "放松 / 解压", "forms": "Unwound (V2/V3)"},
+        {"word": "Fascinating", "pos": "Adj", "zh": "迷人的 / 极好的", "forms": "Fascinate (V), Fascinated (V2/V3), Fascination (N), Fascinatingly (Adv)"},
+        {"word": "Participate", "pos": "V", "zh": "参与 / 参加", "forms": "Participated (V2/V3), Participation (N), Participant (N), Participatory (Adj)"},
+        {"word": "Enthusiast", "pos": "N", "zh": "狂热爱好者", "forms": "Enthuse (V), Enthused (V2/V3), Enthusiasm (N), Enthusiastic (Adj), Enthusiastically (Adv)"},
+        {"word": "Recreation", "pos": "N", "zh": "娱乐 / 休闲", "forms": "Recreate (V), Recreated (V2/V3), Recreational (Adj), Recreationally (Adv)"}
+      ],
+      "recycledWords": [],
+      "idioms": [
+        {"idiom": "Couch potato", "forms": "", "explanation": "指喜欢整天坐在沙发上看电视、不爱运动的人。", "zhEquivalent": "电视迷 / 懒骨头", "example": "On weekends, I become a couch potato and watch TV shows all day."},
+        {"idiom": "Have a blast", "forms": "Had/Having/Will have", "explanation": "玩得非常开心，度过了一段极好的时光。", "zhEquivalent": "尽情欢乐 / 玩得痛快", "example": "We went to the music festival last night and had a blast."}
+      ]
+    },
+    {
+      "week": 2,
+      "unit": 2,
+      "theme": "TV & Media",
+      "newWords": [
+        {"word": "Broadcast", "pos": "V/N", "zh": "广播 / 播出", "forms": "Broadcast (V2/V3), Broadcaster (N)"},
+        {"word": "Commercial", "pos": "N/Adj", "zh": "商业广告 / 商业的", "forms": "Commercialize (V), Commercialized (V2/V3), Commerce (N), Commercially (Adv)"},
+        {"word": "Informative", "pos": "Adj", "zh": "提供有用信息的", "forms": "Inform (V), Informed (V2/V3), Information (N), Informant (N), Informatively (Adv)"},
+        {"word": "Entertaining", "pos": "Adj", "zh": "娱乐的 / 有趣的", "forms": "Entertain (V), Entertained (V2/V3), Entertainment (N), Entertainingly (Adv)"},
+        {"word": "Subscribe", "pos": "V", "zh": "订阅 / 关注", "forms": "Subscribed (V2/V3), Subscription (N), Subscriber (N)"},
+        {"word": "Addictive", "pos": "Adj", "zh": "使人上瘾的", "forms": "Addict (V/N), Addicted (V2/V3), Addiction (N), Addictively (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Unwind", "pos": "V", "zh": "放松 / 解压", "forms": "Unwound (V2/V3)"},
+        {"word": "Fascinating", "pos": "Adj", "zh": "迷人的 / 极好的", "forms": "Fascinate (V), Fascinated (V2/V3), Fascination (N), Fascinatingly (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Glued to the screen", "forms": "Was glued/Being glued/Will be glued", "explanation": "形容人全神贯注地盯着电视或手机屏幕看。", "zhEquivalent": "目不转睛 / 紧盯屏幕", "example": "My little brother is always glued to the screen when his favorite cartoon is on."},
+        {"idiom": "Make headlines", "forms": "Made/Making/Will make", "explanation": "成为新闻的重要报道，引起广泛关注。", "zhEquivalent": "登上头条 / 轰动一时", "example": "The release of the new smartphone made headlines yesterday."}
+      ]
+    },
+    {
+      "week": 3,
+      "unit": 3,
+      "theme": "Food & Diet",
+      "newWords": [
+        {"word": "Nutritious", "pos": "Adj", "zh": "有营养的", "forms": "Nourish (V), Nourished (V2/V3), Nutrition (N), Nutrient (N), Nutritiously (Adv)"},
+        {"word": "Ingredient", "pos": "N", "zh": "食材 / 配料", "forms": ""},
+        {"word": "Cuisine", "pos": "N", "zh": "菜肴 / 烹饪", "forms": "Culinary (Adj)"},
+        {"word": "Consume", "pos": "V", "zh": "消耗 / 吃喝", "forms": "Consumed (V2/V3), Consumption (N), Consumer (N), Consumable (Adj)"},
+        {"word": "Appetite", "pos": "N", "zh": "胃口 / 食欲", "forms": "Appetize (V), Appetized (V2/V3), Appetizer (N), Appetizing (Adj), Appetizingly (Adv)"},
+        {"word": "Homemade", "pos": "Adj", "zh": "自制的", "forms": "Home (N), Make (V), Made (V2/V3)"}
+      ],
+      "recycledWords": [
+        {"word": "Informative", "pos": "Adj", "zh": "提供有用信息的", "forms": "Inform (V), Informed (V2/V3), Information (N), Informant (N), Informatively (Adv)"},
+        {"word": "Addictive", "pos": "Adj", "zh": "使人上瘾的", "forms": "Addict (V/N), Addicted (V2/V3), Addiction (N), Addictively (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Have a sweet tooth", "forms": "Had/Having/Will have", "explanation": "极其喜欢吃糖果、甜点等甜食。", "zhEquivalent": "嗜甜如命 / 喜食甜食", "example": "I have a sweet tooth, so I always order chocolate cake after dinner."},
+        {"idiom": "A piece of cake", "forms": "", "explanation": "形容做某件事情非常容易，毫不费力。", "zhEquivalent": "小菜一碟 / 易如反掌", "example": "For a professional chef, cooking a big family dinner is a piece of cake."}
+      ]
+    },
+    {
+      "week": 4,
+      "unit": 4,
+      "theme": "Transport",
+      "newWords": [
+        {"word": "Commute", "pos": "V/N", "zh": "通勤 / 上下班往返", "forms": "Commuted (V2/V3), Commuter (N)"},
+        {"word": "Congestion", "pos": "N", "zh": "拥堵 / 塞车", "forms": "Congest (V), Congested (V2/V3/Adj)"},
+        {"word": "Convenient", "pos": "Adj", "zh": "方便的 / 便利的", "forms": "Convenience (N), Conveniently (Adv)"},
+        {"word": "Passenger", "pos": "N", "zh": "乘客", "forms": ""},
+        {"word": "Reliable", "pos": "Adj", "zh": "可靠的 / 可信赖的", "forms": "Rely (V), Relied (V2/V3), Reliability (N), Reliance (N), Reliant (Adj), Reliably (Adv)"},
+        {"word": "Vehicle", "pos": "N", "zh": "车辆 / 交通工具", "forms": "Vehicular (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Consume", "pos": "V", "zh": "消耗 / 吃喝", "forms": "Consumed (V2/V3), Consumption (N), Consumer (N), Consumable (Adj)"},
+        {"word": "Nutritious", "pos": "Adj", "zh": "有营养的", "forms": "Nourish (V), Nourished (V2/V3), Nutrition (N), Nutrient (N), Nutritiously (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Beat the traffic", "forms": "Beat/Beating/Will beat", "explanation": "提早出发以避开道路交通高峰期。", "zhEquivalent": "错峰出行", "example": "We need to leave the house at 6 AM to beat the traffic."},
+        {"idiom": "Miss the boat", "forms": "Missed/Missing/Will miss", "explanation": "因为行动太慢而错失了良机。", "zhEquivalent": "错失良机 / 坐失机宜", "example": "I forgot to buy the cheap train tickets yesterday, so I missed the boat."}
+      ]
+    },
+    {
+      "week": 5,
+      "unit": 5,
+      "theme": "Holidays",
+      "newWords": [
+        {"word": "Destination", "pos": "N", "zh": "目的地", "forms": "Destine (V), Destined (V2/V3), Destiny (N)"},
+        {"word": "Accommodation", "pos": "N", "zh": "住宿", "forms": "Accommodate (V), Accommodated (V2/V3), Accommodating (Adj)"},
+        {"word": "Itinerary", "pos": "N", "zh": "行程 / 旅游路线", "forms": ""},
+        {"word": "Souvenir", "pos": "N", "zh": "纪念品", "forms": ""},
+        {"word": "Breathtaking", "pos": "Adj", "zh": "令人叹为观止的 / 极美的", "forms": "Breath (N), Take (V), Took (V2), Taken (V3), Breathtakingly (Adv)"},
+        {"word": "Explore", "pos": "V", "zh": "探索 / 探险", "forms": "Explored (V2/V3), Exploration (N), Explorer (N), Exploratory (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Congestion", "pos": "N", "zh": "拥堵 / 塞车", "forms": "Congest (V), Congested (V2/V3/Adj)"},
+        {"word": "Convenient", "pos": "Adj", "zh": "方便的 / 便利的", "forms": "Convenience (N), Conveniently (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Travel light", "forms": "Traveled/Traveling/Will travel", "explanation": "出门旅行时尽量少带行李。", "zhEquivalent": "轻装简行 / 轻装上阵", "example": "I always travel light because I hate carrying heavy bags at the airport."},
+        {"idiom": "Off the beaten track", "forms": "", "explanation": "去偏僻的、很少有游客去的冷门地方。", "zhEquivalent": "人迹罕至 / 世外桃源", "example": "We found a beautiful small beach that was completely off the beaten track."}
+      ]
+    },
+    {
+      "week": 6,
+      "unit": 6,
+      "theme": "Learning/Education",
+      "newWords": [
+        {"word": "Curriculum", "pos": "N", "zh": "课程 (全部体系)", "forms": "Curricula (N), Curricular (Adj)"},
+        {"word": "Assignment", "pos": "N", "zh": "作业 / 任务", "forms": "Assign (V), Assigned (V2/V3), Assignable (Adj)"},
+        {"word": "Motivated", "pos": "Adj", "zh": "有积极性的 / 动力十足的", "forms": "Motivate (V), Motivated (V2/V3), Motivation (N), Motive (N), Motivational (Adj), Motivationally (Adv)"},
+        {"word": "Concentrate", "pos": "V", "zh": "集中注意力", "forms": "Concentrated (V2/V3), Concentration (N)"},
+        {"word": "Qualification", "pos": "N", "zh": "资格证书 / 学历", "forms": "Qualify (V), Qualified (V2/V3/Adj)"},
+        {"word": "Extracurricular", "pos": "Adj", "zh": "课外的", "forms": "Extracurriculars (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Explore", "pos": "V", "zh": "探索 / 探险", "forms": "Explored (V2/V3), Exploration (N), Explorer (N), Exploratory (Adj)"},
+        {"word": "Breathtaking", "pos": "Adj", "zh": "令人叹为观止的 / 极美的", "forms": "Breath (N), Take (V), Took (V2), Taken (V3), Breathtakingly (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Hit the books", "forms": "Hit/Hitting/Will hit", "explanation": "开始非常认真地用功读书复习。", "zhEquivalent": "埋头苦读 / 发奋图强", "example": "I have a big math test tomorrow, so I need to hit the books tonight."},
+        {"idiom": "Learn by heart", "forms": "Learned/Learning/Will learn", "explanation": "通过反复记忆将内容烂熟于心。", "zhEquivalent": "熟记于心 / 倒背如流", "example": "The teacher asked us to learn the short English poem by heart."}
+      ]
+    },
+    {
+      "week": 7,
+      "unit": 7,
+      "theme": "Careers",
+      "newWords": [
+        {"word": "Profession", "pos": "N", "zh": "职业 / 专业", "forms": "Profess (V), Professed (V2/V3), Professional (Adj/N), Professionally (Adv)"},
+        {"word": "Colleague", "pos": "N", "zh": "同事", "forms": ""},
+        {"word": "Candidate", "pos": "N", "zh": "候选人 / 应聘者", "forms": "Candidacy (N)"},
+        {"word": "Promotion", "pos": "N", "zh": "晋升 / 升职", "forms": "Promote (V), Promoted (V2/V3), Promoter (N), Promotional (Adj)"},
+        {"word": "Resign", "pos": "V", "zh": "辞职", "forms": "Resigned (V2/V3/Adj), Resignation (N), Resignedly (Adv)"},
+        {"word": "Ambitious", "pos": "Adj", "zh": "有野心的 / 雄心勃勃的", "forms": "Ambition (N), Ambitiously (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Motivated", "pos": "Adj", "zh": "有积极性的 / 动力十足的", "forms": "Motivate (V), Motivated (V2/V3), Motivation (N), Motive (N), Motivational (Adj), Motivationally (Adv)"},
+        {"word": "Qualification", "pos": "N", "zh": "资格证书 / 学历", "forms": "Qualify (V), Qualified (V2/V3/Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Learn the ropes", "forms": "Learned/Learning/Will learn", "explanation": "学习如何做某项工作或掌握基本窍门。", "zhEquivalent": "摸清门道 / 熟悉业务", "example": "It took me a few weeks to learn the ropes at my new part-time job."},
+        {"idiom": "Climb the corporate ladder", "forms": "Climbed/Climbing/Will climb", "explanation": "在公司或职场中逐步晋升到更高的职位。", "zhEquivalent": "步步高升 / 职场晋阶", "example": "He works very hard every day because he wants to climb the corporate ladder."}
+      ]
+    },
+    {
+      "week": 8,
+      "unit": 8,
+      "theme": "Work & Money",
+      "newWords": [
+        {"word": "Salary", "pos": "N", "zh": "薪水 / 报酬", "forms": "Salaried (Adj)"},
+        {"word": "Budget", "pos": "N/V", "zh": "预算 / 做预算", "forms": "Budgeted (V2/V3), Budgetary (Adj)"},
+        {"word": "Expense", "pos": "N", "zh": "开销 / 支出", "forms": "Expend (V), Expended (V2/V3), Expenditure (N), Expensive (Adj), Expensively (Adv)"},
+        {"word": "Invest", "pos": "V", "zh": "投资", "forms": "Invested (V2/V3), Investment (N), Investor (N)"},
+        {"word": "Profitable", "pos": "Adj", "zh": "有利可图的 / 赚钱的", "forms": "Profit (N/V), Profited (V2/V3), Profitability (N), Profitably (Adv)"},
+        {"word": "Income", "pos": "N", "zh": "收入", "forms": "Incoming (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Promotion", "pos": "N", "zh": "晋升 / 升职", "forms": "Promote (V), Promoted (V2/V3), Promoter (N), Promotional (Adj)"},
+        {"word": "Ambitious", "pos": "Adj", "zh": "有野心的 / 雄心勃勃的", "forms": "Ambition (N), Ambitiously (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Make ends meet", "forms": "Made/Making/Will make", "explanation": "赚的钱勉强够支付生活的基本开销。", "zhEquivalent": "勉强维持生计 / 收支相抵", "example": "When I was a university student, it was hard to make ends meet."},
+        {"idiom": "Cost an arm and a leg", "forms": "Cost/Costing/Will cost", "explanation": "形容某样东西极其昂贵。", "zhEquivalent": "极其昂贵 / 代价高昂", "example": "Buying a new apartment in the city center will cost an arm and a leg."}
+      ]
+    },
+    {
+      "week": 9,
+      "unit": 9,
+      "theme": "Sports",
+      "newWords": [
+        {"word": "Tournament", "pos": "N", "zh": "锦标赛 / 联赛", "forms": ""},
+        {"word": "Referee", "pos": "N/V", "zh": "裁判员", "forms": "Refereed (V2/V3)"},
+        {"word": "Competitive", "pos": "Adj", "zh": "有竞争力的 / 好胜的", "forms": "Compete (V), Competed (V2/V3), Competition (N), Competitor (N), Competitively (Adv)"},
+        {"word": "Stamina", "pos": "N", "zh": "体力 / 耐力", "forms": ""},
+        {"word": "Spectator", "pos": "N", "zh": "现场观众", "forms": "Spectate (V), Spectated (V2/V3), Spectacle (N), Spectacular (Adj), Spectacularly (Adv)"},
+        {"word": "Workout", "pos": "N", "zh": "锻炼 / 健身", "forms": "Work out (V), Worked out (V2/V3)"}
+      ],
+      "recycledWords": [
+        {"word": "Budget", "pos": "N/V", "zh": "预算 / 做预算", "forms": "Budgeted (V2/V3), Budgetary (Adj)"},
+        {"word": "Expense", "pos": "N", "zh": "开销 / 支出", "forms": "Expend (V), Expended (V2/V3), Expenditure (N), Expensive (Adj), Expensively (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Get the ball rolling", "forms": "Got/Getting/Will get", "explanation": "开始做某事，使事情运转或进行起来。", "zhEquivalent": "开个好头 / 行动起来", "example": "Let's get the ball rolling and start our football training session."},
+        {"idiom": "Keep in shape", "forms": "Kept/Keeping/Will keep", "explanation": "保持良好的体形和身体健康状态。", "zhEquivalent": "保持身材 / 强身健体", "example": "I go swimming twice a week to keep in shape."}
+      ]
+    },
+    {
+      "week": 10,
+      "unit": 10,
+      "theme": "People/Relationships",
+      "newWords": [
+        {"word": "Acquaintance", "pos": "N", "zh": "熟人 (非密友)", "forms": "Acquaint (V), Acquainted (V2/V3/Adj)"},
+        {"word": "Trustworthy", "pos": "Adj", "zh": "值得信赖的", "forms": "Trust (N/V), Trusted (V2/V3), Trustworthiness (N), Trusting (Adj)"},
+        {"word": "Sociable", "pos": "Adj", "zh": "好交际的 / 合群的", "forms": "Socialize (V), Socialized (V2/V3), Society (N), Sociability (N), Social (Adj), Sociably (Adv)"},
+        {"word": "Conflict", "pos": "N/V", "zh": "冲突 / 矛盾", "forms": "Conflicted (V2/V3/Adj), Conflicting (Adj)"},
+        {"word": "Sibling", "pos": "N", "zh": "兄弟姐妹", "forms": ""},
+        {"word": "Compromise", "pos": "N/V", "zh": "妥协 / 让步", "forms": "Compromised (V2/V3), Compromising (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Competitive", "pos": "Adj", "zh": "有竞争力的 / 好胜的", "forms": "Compete (V), Competed (V2/V3), Competition (N), Competitor (N), Competitively (Adv)"},
+        {"word": "Stamina", "pos": "N", "zh": "体力 / 耐力", "forms": ""}
+      ],
+      "idioms": [
+        {"idiom": "See eye to eye", "forms": "Saw/Seeing/Will see", "explanation": "在某件事情上看法完全一致。", "zhEquivalent": "意见一致 / 所见略同", "example": "My brother and I don't always see eye to eye, but we love each other."},
+        {"idiom": "A shoulder to cry on", "forms": "", "explanation": "在遇到困难时可以倾诉、依赖并寻求安慰的人。", "zhEquivalent": "倾诉对象 / 依靠的肩膀", "example": "Whenever I am sad, my best friend is always a shoulder to cry on."}
+      ]
+    },
+    {
+      "week": 11,
+      "unit": 11,
+      "theme": "Organizations/Volunteering",
+      "newWords": [
+        {"word": "Volunteer", "pos": "N/V", "zh": "志愿者 / 志愿服务", "forms": "Volunteered (V2/V3), Voluntary (Adj), Voluntarily (Adv)"},
+        {"word": "Charity", "pos": "N", "zh": "慈善机构 / 慈善", "forms": "Charitable (Adj), Charitably (Adv)"},
+        {"word": "Contribute", "pos": "V", "zh": "贡献 / 捐献", "forms": "Contributed (V2/V3), Contribution (N), Contributor (N)"},
+        {"word": "Meaningful", "pos": "Adj", "zh": "有意义的", "forms": "Mean (V), Meant (V2/V3), Meaning (N), Meaningfully (Adv)"},
+        {"word": "Impact", "pos": "N/V", "zh": "影响", "forms": "Impacted (V2/V3), Impactful (Adj)"},
+        {"word": "Community", "pos": "N", "zh": "社区 / 群体", "forms": "Communal (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Sociable", "pos": "Adj", "zh": "好交际的 / 合群的", "forms": "Socialize (V), Socialized (V2/V3), Society (N), Sociability (N), Social (Adj), Sociably (Adv)"},
+        {"word": "Compromise", "pos": "N/V", "zh": "妥协 / 让步", "forms": "Compromised (V2/V3), Compromising (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Lend a helping hand", "forms": "Lent/Lending/Will lend", "explanation": "伸出援手，给予他人帮助。", "zhEquivalent": "助人为乐 / 伸出援手", "example": "I always try to lend a helping hand when my neighbors need it."},
+        {"idiom": "Make a difference", "forms": "Made/Making/Will make", "explanation": "产生积极的影响，带来改变。", "zhEquivalent": "发挥作用 / 产生影响", "example": "Volunteering at the animal shelter every weekend really makes a difference."}
+      ]
+    },
+    {
+      "week": 12,
+      "unit": 12,
+      "theme": "Achievements",
+      "newWords": [
+        {"word": "Accomplish", "pos": "V", "zh": "完成 / 实现", "forms": "Accomplished (V2/V3), Accomplishment (N)"},
+        {"word": "Overcome", "pos": "V", "zh": "克服 / 战胜", "forms": "Overcame (V2), Overcome (V3), Overcoming (Adj)"},
+        {"word": "Obstacle", "pos": "N", "zh": "障碍", "forms": ""},
+        {"word": "Dedicate", "pos": "V", "zh": "奉献 / 致力于", "forms": "Dedicated (V2/V3/Adj), Dedication (N)"},
+        {"word": "Fulfill", "pos": "V", "zh": "履行 / 实现", "forms": "Fulfilled (V2/V3), Fulfillment (N), Fulfilling (Adj)"},
+        {"word": "Milestone", "pos": "N", "zh": "里程碑", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Contribute", "pos": "V", "zh": "贡献 / 捐献", "forms": "Contributed (V2/V3), Contribution (N), Contributor (N)"},
+        {"word": "Impact", "pos": "N/V", "zh": "影响", "forms": "Impacted (V2/V3), Impactful (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Pass with flying colors", "forms": "Passed/Passing/Will pass", "explanation": "以优异的成绩通过考试或完成任务。", "zhEquivalent": "大获全胜 / 成绩斐然", "example": "She studied very hard and passed her English exam with flying colors."},
+        {"idiom": "Pay off", "forms": "Paid/Paying/Will pay", "explanation": "付出的努力最终得到好结果或回报。", "zhEquivalent": "终得回报 / 功夫不负有心人", "example": "All those late nights of studying finally paid off when I got into a top university."}
+      ]
+    },
+    {
+      "week": 13,
+      "unit": 13,
+      "theme": "Environment",
+      "newWords": [
+        {"word": "Conservation", "pos": "N", "zh": "保护 / 节约", "forms": "Conserve (V), Conserved (V2/V3), Conservative (Adj)"},
+        {"word": "Pollution", "pos": "N", "zh": "污染", "forms": "Pollute (V), Polluted (V2/V3/Adj), Pollutant (N)"},
+        {"word": "Sustainable", "pos": "Adj", "zh": "可持续的", "forms": "Sustain (V), Sustained (V2/V3), Sustainability (N), Sustainably (Adv)"},
+        {"word": "Eco-friendly", "pos": "Adj", "zh": "环保的", "forms": ""},
+        {"word": "Habitat", "pos": "N", "zh": "栖息地", "forms": ""},
+        {"word": "Recycle", "pos": "V", "zh": "回收利用", "forms": "Recycled (V2/V3/Adj), Recycling (N), Recyclable (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Accomplish", "pos": "V", "zh": "完成 / 实现", "forms": "Accomplished (V2/V3), Accomplishment (N)"},
+        {"word": "Overcome", "pos": "V", "zh": "克服 / 战胜", "forms": "Overcame (V2), Overcome (V3), Overcoming (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Go green", "forms": "Went/Going/Will go", "explanation": "采取环保的生活方式。", "zhEquivalent": "践行环保 / 绿色生活", "example": "Many families are trying to go green by using less plastic and saving water."},
+        {"idiom": "Tip of the iceberg", "forms": "", "explanation": "冰山一角，指暴露出来的只是问题的一小部分。", "zhEquivalent": "冰山一角", "example": "The plastic on the beach is just the tip of the iceberg of ocean pollution."}
+      ]
+    },
+    {
+      "week": 14,
+      "unit": 14,
+      "theme": "Technology",
+      "newWords": [
+        {"word": "Gadget", "pos": "N", "zh": "小巧的机械 / 小玩意", "forms": ""},
+        {"word": "Innovative", "pos": "Adj", "zh": "创新的", "forms": "Innovate (V), Innovated (V2/V3), Innovation (N), Innovator (N)"},
+        {"word": "Outdated", "pos": "Adj", "zh": "过时的", "forms": "Date (N/V), Dated (V2/V3)"},
+        {"word": "Breakthrough", "pos": "N", "zh": "突破", "forms": "Break through (V), Broke through (V2), Broken through (V3)"},
+        {"word": "Upgrade", "pos": "V/N", "zh": "升级", "forms": "Upgraded (V2/V3)"},
+        {"word": "Virtual", "pos": "Adj", "zh": "虚拟的", "forms": "Virtually (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Sustainable", "pos": "Adj", "zh": "可持续的", "forms": "Sustain (V), Sustained (V2/V3), Sustainability (N), Sustainably (Adv)"},
+        {"word": "Eco-friendly", "pos": "Adj", "zh": "环保的", "forms": ""}
+      ],
+      "idioms": [
+        {"idiom": "Not rocket science", "forms": "", "explanation": "形容某事并不复杂，很容易理解。", "zhEquivalent": "并非难事 / 显而易见", "example": "You can easily fix the computer problem; it's not rocket science."},
+        {"idiom": "Ahead of the curve", "forms": "", "explanation": "在思想或技术上领先于时代或其他人。", "zhEquivalent": "走在时代前列 / 遥遥领先", "example": "That tech company is always ahead of the curve with its smartphone designs."}
+      ]
+    },
+    {
+      "week": 15,
+      "unit": 15,
+      "theme": "Culture/Customs",
+      "newWords": [
+        {"word": "Tradition", "pos": "N", "zh": "传统", "forms": "Traditional (Adj), Traditionally (Adv)"},
+        {"word": "Heritage", "pos": "N", "zh": "遗产 (文化等)", "forms": ""},
+        {"word": "Diverse", "pos": "Adj", "zh": "多样的 / 不同的", "forms": "Diversify (V), Diversified (V2/V3), Diversity (N)"},
+        {"word": "Custom", "pos": "N", "zh": "风俗 / 习惯", "forms": "Customary (Adj), Customarily (Adv)"},
+        {"word": "Respect", "pos": "V/N", "zh": "尊重", "forms": "Respected (V2/V3), Respectful (Adj), Respectfully (Adv)"},
+        {"word": "Etiquette", "pos": "N", "zh": "礼节 / 规矩", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Innovative", "pos": "Adj", "zh": "创新的", "forms": "Innovate (V), Innovated (V2/V3), Innovation (N), Innovator (N)"},
+        {"word": "Virtual", "pos": "Adj", "zh": "虚拟的", "forms": "Virtually (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Do as the Romans do", "forms": "Did/Doing/Will do", "explanation": "入乡随俗 (常与When in Rome连用)。", "zhEquivalent": "入乡随俗", "example": "I ate with my hands while traveling in India, because when in Rome, you should do as the Romans do."},
+        {"idiom": "Broaden one's horizons", "forms": "Broadened/Broadening/Will broaden", "explanation": "开阔眼界，增长见识。", "zhEquivalent": "开阔眼界", "example": "Traveling to different countries is a great way to broaden your horizons."}
+      ]
+    },
+    {
+      "week": 16,
+      "unit": 16,
+      "theme": "Modern Living/City vs Country",
+      "newWords": [
+        {"word": "Hectic", "pos": "Adj", "zh": "忙碌的 / 繁忙的", "forms": "Hectically (Adv)"},
+        {"word": "Tranquil", "pos": "Adj", "zh": "宁静的 / 安静的", "forms": "Tranquility (N), Tranquilly (Adv)"},
+        {"word": "Infrastructure", "pos": "N", "zh": "基础设施", "forms": ""},
+        {"word": "Cosmopolitan", "pos": "Adj/N", "zh": "国际化的 / 世界大都市", "forms": ""},
+        {"word": "Isolate", "pos": "V", "zh": "孤立 / 隔离", "forms": "Isolated (V2/V3/Adj), Isolation (N)"},
+        {"word": "Pace", "pos": "N/V", "zh": "节奏 / 步伐", "forms": "Paced (V2/V3)"}
+      ],
+      "recycledWords": [
+        {"word": "Diverse", "pos": "Adj", "zh": "多样的 / 不同的", "forms": "Diversify (V), Diversified (V2/V3), Diversity (N)"},
+        {"word": "Heritage", "pos": "N", "zh": "遗产 (文化等)", "forms": ""}
+      ],
+      "idioms": [
+        {"idiom": "Hustle and bustle", "forms": "", "explanation": "熙熙攘攘，喧闹繁华（通常指城市生活）。", "zhEquivalent": "熙熙攘攘 / 喧嚣", "example": "Sometimes I like to escape the hustle and bustle of the city and go to the countryside."},
+        {"idiom": "The best of both worlds", "forms": "", "explanation": "两全其美，兼顾两者的优点。", "zhEquivalent": "两全其美", "example": "Living in the suburbs gives me the best of both worlds: quiet nights and easy access to the city."}
+      ]
+    },
+    {
+      "week": 17,
+      "unit": 17,
+      "theme": "Fashion/Shopping",
+      "newWords": [
+        {"word": "Trendy", "pos": "Adj", "zh": "流行的 / 时髦的", "forms": "Trend (N/V)"},
+        {"word": "Garment", "pos": "N", "zh": "衣服 / 服装", "forms": ""},
+        {"word": "Browse", "pos": "V/N", "zh": "浏览 / 随便看看", "forms": "Browsed (V2/V3), Browser (N)"},
+        {"word": "Brand", "pos": "N/V", "zh": "品牌 / 打上烙印", "forms": "Branded (V2/V3/Adj)"},
+        {"word": "Affordable", "pos": "Adj", "zh": "负担得起的", "forms": "Afford (V), Afforded (V2/V3), Affordability (N)"},
+        {"word": "Vintage", "pos": "Adj/N", "zh": "复古的 / 经典的老东西", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Hectic", "pos": "Adj", "zh": "忙碌的 / 繁忙的", "forms": "Hectically (Adv)"},
+        {"word": "Tranquil", "pos": "Adj", "zh": "宁静的 / 安静的", "forms": "Tranquility (N), Tranquilly (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Dress to kill", "forms": "Dressed/Dressing/Will dress", "explanation": "穿着极其迷人、引人注目。", "zhEquivalent": "盛装打扮 / 惊艳全场", "example": "She walked into the party dressed to kill in a beautiful red gown."},
+        {"idiom": "Shop till you drop", "forms": "Shopped/Shopping/Will shop", "explanation": "疯狂购物，直到累得走不动。", "zhEquivalent": "血拼到底", "example": "During the winter sales, my friends and I usually shop till we drop."}
+      ]
+    },
+    {
+      "week": 18,
+      "unit": 18,
+      "theme": "Entertainment/Arts",
+      "newWords": [
+        {"word": "Masterpiece", "pos": "N", "zh": "杰作 / 名著", "forms": ""},
+        {"word": "Exhibition", "pos": "N", "zh": "展览", "forms": "Exhibit (V/N), Exhibited (V2/V3), Exhibitor (N)"},
+        {"word": "Inspire", "pos": "V", "zh": "启发 / 激励", "forms": "Inspired (V2/V3/Adj), Inspiration (N), Inspiring (Adj)"},
+        {"word": "Performer", "pos": "N", "zh": "表演者", "forms": "Perform (V), Performed (V2/V3), Performance (N)"},
+        {"word": "Captivate", "pos": "V", "zh": "迷住 / 吸引", "forms": "Captivated (V2/V3), Captivating (Adj), Captivation (N)"},
+        {"word": "Genre", "pos": "N", "zh": "类型 / 体裁", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Trendy", "pos": "Adj", "zh": "流行的 / 时髦的", "forms": "Trend (N/V)"},
+        {"word": "Vintage", "pos": "Adj/N", "zh": "复古的 / 经典的老东西", "forms": ""}
+      ],
+      "idioms": [
+        {"idiom": "Steal the show", "forms": "Stole/Stealing/Will steal", "explanation": "抢尽风头，成为全场焦点。", "zhEquivalent": "大出风头 / 独领风骚", "example": "The little girl was supposed to be a background dancer, but she completely stole the show."},
+        {"idiom": "Music to my ears", "forms": "", "explanation": "听到让人非常高兴的消息。", "zhEquivalent": "佳音 / 乐不可支", "example": "Hearing that we have a week off from school is music to my ears."}
+      ]
+    },
+    {
+      "week": 19,
+      "unit": 19,
+      "theme": "Health/Medicine",
+      "newWords": [
+        {"word": "Symptom", "pos": "N", "zh": "症状 / 征兆", "forms": "Symptomatic (Adj)"},
+        {"word": "Therapy", "pos": "N", "zh": "治疗 / 疗法", "forms": "Therapist (N), Therapeutic (Adj)"},
+        {"word": "Preventive", "pos": "Adj", "zh": "预防的", "forms": "Prevent (V), Prevented (V2/V3), Prevention (N), Preventable (Adj)"},
+        {"word": "Immunity", "pos": "N", "zh": "免疫力", "forms": "Immune (Adj), Immunize (V), Immunized (V2/V3)"},
+        {"word": "Diagnose", "pos": "V", "zh": "诊断", "forms": "Diagnosed (V2/V3), Diagnosis (N), Diagnostic (Adj)"},
+        {"word": "Recover", "pos": "V", "zh": "恢复 / 康复", "forms": "Recovered (V2/V3), Recovery (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Inspire", "pos": "V", "zh": "启发 / 激励", "forms": "Inspired (V2/V3/Adj), Inspiration (N), Inspiring (Adj)"},
+        {"word": "Captivate", "pos": "V", "zh": "迷住 / 吸引", "forms": "Captivated (V2/V3), Captivating (Adj), Captivation (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Under the weather", "forms": "", "explanation": "觉得身体不舒服，生小病。", "zhEquivalent": "身体不适 / 抱恙", "example": "I won't go to the gym today because I am feeling a bit under the weather."},
+        {"idiom": "Fit as a fiddle", "forms": "", "explanation": "身体非常健康，精神饱满。", "zhEquivalent": "健壮如牛 / 身体硬朗", "example": "My grandfather is 80 years old, but he exercises every day and is fit as a fiddle."}
+      ]
+    },
+    {
+      "week": 20,
+      "unit": 20,
+      "theme": "The Future",
+      "newWords": [
+        {"word": "Predict", "pos": "V", "zh": "预测 / 预言", "forms": "Predicted (V2/V3), Prediction (N), Predictable (Adj)"},
+        {"word": "Consequence", "pos": "N", "zh": "后果 / 结果", "forms": "Consequential (Adj), Consequently (Adv)"},
+        {"word": "Potential", "pos": "N/Adj", "zh": "潜力 / 潜在的", "forms": "Potentially (Adv)"},
+        {"word": "Inevitable", "pos": "Adj", "zh": "不可避免的", "forms": "Inevitability (N), Inevitably (Adv)"},
+        {"word": "Revolutionize", "pos": "V", "zh": "彻底改变", "forms": "Revolutionized (V2/V3), Revolution (N), Revolutionary (Adj)"},
+        {"word": "Vision", "pos": "N", "zh": "愿景 / 视力", "forms": "Visionary (Adj/N)"}
+      ],
+      "recycledWords": [
+        {"word": "Preventive", "pos": "Adj", "zh": "预防的", "forms": "Prevent (V), Prevented (V2/V3), Prevention (N), Preventable (Adj)"},
+        {"word": "Recover", "pos": "V", "zh": "恢复 / 康复", "forms": "Recovered (V2/V3), Recovery (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Bear in mind", "forms": "Bore/Bearing/Will bear", "explanation": "记住某事或在做决定时考虑到某事。", "zhEquivalent": "牢记在心 / 铭记", "example": "Before you buy that car, bear in mind that petrol is becoming very expensive."},
+        {"idiom": "Around the corner", "forms": "", "explanation": "即将发生，就在眼前。", "zhEquivalent": "近在咫尺 / 即将来临", "example": "The new technology era is just around the corner."}
+      ]
+    },
+    {
+      "week": 21,
+      "unit": 1,
+      "theme": "Leisure/Free Time (Advanced)",
+      "newWords": [
+        {"word": "Solitude", "pos": "N", "zh": "独处 / 隐居", "forms": "Solitary (Adj)"},
+        {"word": "Invigorate", "pos": "V", "zh": "令人振奋 / 使精力充沛", "forms": "Invigorated (V2/V3), Invigoration (N), Invigorating (Adj)"},
+        {"word": "Pursue", "pos": "V", "zh": "追求 / 从事", "forms": "Pursued (V2/V3), Pursuit (N)"},
+        {"word": "Sedentary", "pos": "Adj", "zh": "久坐的 / 缺乏运动的", "forms": ""},
+        {"word": "Therapeutic", "pos": "Adj", "zh": "治疗的 / 有益健康的", "forms": "Therapy (N), Therapeutically (Adv)"},
+        {"word": "Stimulate", "pos": "V", "zh": "刺激 / 激发灵感", "forms": "Stimulated (V2/V3), Stimulation (N), Stimulant (N), Stimulating (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Inevitable", "pos": "Adj", "zh": "不可避免的", "forms": "Inevitability (N), Inevitably (Adv)"},
+        {"word": "Predict", "pos": "V", "zh": "预测 / 预言", "forms": "Predicted (V2/V3), Prediction (N), Predictable (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Let one's hair down", "forms": "Let/Letting/Will let", "explanation": "彻底放松，不拘小节，尽情享受。", "zhEquivalent": "放松束缚 / 尽情狂欢", "example": "After a stressful week of exams, it's important to let your hair down and have fun."},
+        {"idiom": "Recharge one's batteries", "forms": "Recharged/Recharging/Will recharge", "explanation": "休息以恢复体力和精力。", "zhEquivalent": "养精蓄锐 / 充电", "example": "I like to spend time in nature to recharge my batteries."}
+      ]
+    },
+    {
+      "week": 22,
+      "unit": 2,
+      "theme": "TV & Media (Advanced)",
+      "newWords": [
+        {"word": "Manipulate", "pos": "V", "zh": "操纵 / 控制", "forms": "Manipulated (V2/V3), Manipulation (N), Manipulative (Adj)"},
+        {"word": "Objective", "pos": "Adj", "zh": "客观的", "forms": "Objectivity (N), Objectively (Adv)"},
+        {"word": "Sensationalize", "pos": "V", "zh": "炒作 / 使引起轰动", "forms": "Sensationalized (V2/V3), Sensation (N), Sensational (Adj)"},
+        {"word": "Disseminate", "pos": "V", "zh": "传播 / 散布 (信息)", "forms": "Disseminated (V2/V3), Dissemination (N)"},
+        {"word": "Bias", "pos": "N", "zh": "偏见 / 偏心", "forms": "Bias (V), Biased (V2/V3/Adj)"},
+        {"word": "Verify", "pos": "V", "zh": "核实 / 证明", "forms": "Verified (V2/V3), Verification (N), Verifiable (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Pursue", "pos": "V", "zh": "追求 / 从事", "forms": "Pursued (V2/V3), Pursuit (N)"},
+        {"word": "Stimulate", "pos": "V", "zh": "刺激 / 激发灵感", "forms": "Stimulated (V2/V3), Stimulation (N), Stimulant (N), Stimulating (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Take with a grain of salt", "forms": "Took/Taking/Will take", "explanation": "对听到的事情半信半疑，有保留地接受。", "zhEquivalent": "半信半疑 / 持保留态度", "example": "You should take information on social media with a grain of salt."},
+        {"idiom": "Word of mouth", "forms": "", "explanation": "通过人们的口头交流来传播。", "zhEquivalent": "口口相传 / 口碑", "example": "The small independent movie became a massive hit simply by word of mouth."}
+      ]
+    },
+    {
+      "week": 23,
+      "unit": 3,
+      "theme": "Food & Diet (Advanced)",
+      "newWords": [
+        {"word": "Epidemic", "pos": "N", "zh": "流行病", "forms": "Epidemic (Adj)"},
+        {"word": "Processed", "pos": "Adj", "zh": "加工过的", "forms": "Process (V), Processed (V2/V3)"},
+        {"word": "Dietary", "pos": "Adj", "zh": "饮食的", "forms": "Diet (N/V), Dieted (V2/V3)"},
+        {"word": "Indulge", "pos": "V", "zh": "沉溺于 / 尽情享受", "forms": "Indulged (V2/V3), Indulgence (N), Indulgent (Adj)"},
+        {"word": "Metabolism", "pos": "N", "zh": "新陈代谢", "forms": "Metabolic (Adj)"},
+        {"word": "Culinary", "pos": "Adj", "zh": "烹饪的", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Manipulate", "pos": "V", "zh": "操纵 / 控制", "forms": "Manipulated (V2/V3), Manipulation (N), Manipulative (Adj)"},
+        {"word": "Bias", "pos": "N", "zh": "偏见 / 偏心", "forms": "Bias (V), Biased (V2/V3/Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "You are what you eat", "forms": "", "explanation": "饮食决定健康状态。", "zhEquivalent": "人如其食 / 病从口入", "example": "If you only eat fast food, you will feel tired, because you are what you eat."},
+        {"idiom": "Mouth-watering", "forms": "", "explanation": "食物看起来或闻起来极其美味，让人流口水。", "zhEquivalent": "令人垂涎欲滴", "example": "The bakery down the street sells the most mouth-watering chocolate cakes."}
+      ]
+    },
+    {
+      "week": 24,
+      "unit": 4,
+      "theme": "Transport (Advanced)",
+      "newWords": [
+        {"word": "Gridlock", "pos": "N", "zh": "交通瘫痪 / 僵局", "forms": "Gridlocked (Adj)"},
+        {"word": "Emit", "pos": "V", "zh": "排放 / 散发", "forms": "Emitted (V2/V3), Emission (N)"},
+        {"word": "Alternative", "pos": "N", "zh": "替代方案", "forms": "Alternative (Adj), Alternatively (Adv)"},
+        {"word": "Subsidize", "pos": "V", "zh": "补贴 / 资助", "forms": "Subsidized (V2/V3/Adj), Subsidy (N)"},
+        {"word": "Viable", "pos": "Adj", "zh": "切实可行的", "forms": "Viability (N), Viably (Adv)"},
+        {"word": "Integrate", "pos": "V", "zh": "整合 / 融入", "forms": "Integrated (V2/V3/Adj), Integration (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Processed", "pos": "Adj", "zh": "加工过的", "forms": "Process (V), Processed (V2/V3)"},
+        {"word": "Indulge", "pos": "V", "zh": "沉溺于 / 尽情享受", "forms": "Indulged (V2/V3), Indulgence (N), Indulgent (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Drive someone up the wall", "forms": "Drove/Driving/Will drive", "explanation": "把某人逼疯，让某人极度烦躁。", "zhEquivalent": "逼人发疯 / 使人极为恼火", "example": "The constant noise from the construction site is driving me up the wall."},
+        {"idiom": "Bumper to bumper", "forms": "", "explanation": "形容车辆首尾相连，交通极度拥挤。", "zhEquivalent": "拥堵不堪 / 车水马龙", "example": "The highway was bumper to bumper all the way to the city center."}
+      ]
+    },
+    {
+      "week": 25,
+      "unit": 5,
+      "theme": "Holidays (Advanced)",
+      "newWords": [
+        {"word": "Authentic", "pos": "Adj", "zh": "真实的 / 地道的", "forms": "Authenticity (N), Authentically (Adv)"},
+        {"word": "Commercialize", "pos": "V", "zh": "商业化", "forms": "Commercialized (V2/V3/Adj), Commercialization (N), Commercial (Adj)"},
+        {"word": "Immerse", "pos": "V", "zh": "沉浸于", "forms": "Immersed (V2/V3/Adj), Immersion (N), Immersive (Adj)"},
+        {"word": "Pristine", "pos": "Adj", "zh": "原始的 / 未受破坏的", "forms": ""},
+        {"word": "Broaden", "pos": "V", "zh": "拓宽 / 扩大", "forms": "Broadened (V2/V3), Broad (Adj), Broadly (Adv)"},
+        {"word": "Picturesque", "pos": "Adj", "zh": "如画的 / 美丽的", "forms": ""}
+      ],
+      "recycledWords": [
+        {"word": "Alternative", "pos": "N", "zh": "替代方案", "forms": "Alternative (Adj), Alternatively (Adv)"},
+        {"word": "Viable", "pos": "Adj", "zh": "切实可行的", "forms": "Viability (N), Viably (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Out of this world", "forms": "", "explanation": "极好的，非凡的，超乎想象的。", "zhEquivalent": "极品 / 无与伦比", "example": "The view from the top of the mountain was absolutely out of this world."},
+        {"idiom": "Live out of a suitcase", "forms": "Lived/Living/Will live", "explanation": "因为频繁旅行而居无定所，一直住在酒店里。", "zhEquivalent": "四处奔波 / 居无定所", "example": "As an international tour guide, she has been living out of a suitcase for years."}
+      ]
+    },
+    {
+      "week": 26,
+      "unit": 6,
+      "theme": "Learning/Education (Advanced)",
+      "newWords": [
+        {"word": "Cognitive", "pos": "Adj", "zh": "认知的", "forms": "Cognition (N), Cognitively (Adv)"},
+        {"word": "Theoretical", "pos": "Adj", "zh": "理论的", "forms": "Theory (N), Theorize (V), Theoretically (Adv)"},
+        {"word": "Memorize", "pos": "V", "zh": "记忆 / 背诵", "forms": "Memorized (V2/V3), Memorization (N), Memorable (Adj)"},
+        {"word": "Comprehensive", "pos": "Adj", "zh": "全面的 / 详尽的", "forms": "Comprehend (V), Comprehended (V2/V3), Comprehension (N), Comprehensively (Adv)"},
+        {"word": "Cultivate", "pos": "V", "zh": "培养 / 陶冶", "forms": "Cultivated (V2/V3/Adj), Cultivation (N)"},
+        {"word": "Evaluate", "pos": "V", "zh": "评估 / 评价", "forms": "Evaluated (V2/V3), Evaluation (N), Evaluative (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Authentic", "pos": "Adj", "zh": "真实的 / 地道的", "forms": "Authenticity (N), Authentically (Adv)"},
+        {"word": "Immerse", "pos": "V", "zh": "沉浸于", "forms": "Immersed (V2/V3/Adj), Immersion (N), Immersive (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Put one's thinking cap on", "forms": "Put/Putting/Will put", "explanation": "准备认真思考，绞尽脑汁解决问题。", "zhEquivalent": "绞尽脑汁 / 深入思考", "example": "We need to put our thinking caps on to figure out this difficult math problem."},
+        {"idiom": "Learn the hard way", "forms": "Learned/Learning/Will learn", "explanation": "通过遭受惨痛的教训才学到经验。", "zhEquivalent": "吃亏长智 / 花钱买教训", "example": "I didn't save any money in my twenties, so I had to learn the hard way when I lost my job."}
+      ]
+    },
+    {
+      "week": 27,
+      "unit": 7,
+      "theme": "Careers (Advanced)",
+      "newWords": [
+        {"word": "Lucrative", "pos": "Adj", "zh": "利润丰厚的 / 赚钱的", "forms": "Lucratively (Adv)"},
+        {"word": "Fulfill", "pos": "V", "zh": "实现 / 满足 / 完成", "forms": "Fulfilled (V2/V3), Fulfillment (N), Fulfilling (Adj)"},
+        {"word": "Hierarchy", "pos": "N", "zh": "等级制度", "forms": "Hierarchical (Adj)"},
+        {"word": "Entrepreneur", "pos": "N", "zh": "企业家 / 创业者", "forms": "Entrepreneurial (Adj), Entrepreneurship (N)"},
+        {"word": "Delegate", "pos": "V", "zh": "委派(任务) / 授权", "forms": "Delegated (V2/V3), Delegation (N)"},
+        {"word": "Versatile", "pos": "Adj", "zh": "多才多艺的 / 多用途的", "forms": "Versatility (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Cognitive", "pos": "Adj", "zh": "认知的", "forms": "Cognition (N), Cognitively (Adv)"},
+        {"word": "Cultivate", "pos": "V", "zh": "培养 / 陶冶", "forms": "Cultivated (V2/V3/Adj), Cultivation (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Burn the midnight oil", "forms": "Burned/Burning/Will burn", "explanation": "为了工作或学习而熬夜到很晚。", "zhEquivalent": "熬夜苦干 / 挑灯夜战", "example": "She had to burn the midnight oil to finish the report before the deadline."},
+        {"idiom": "Think outside the box", "forms": "Thought/Thinking/Will think", "explanation": "跳出固有的传统思维模式，进行创新思考。", "zhEquivalent": "创新思维 / 打破常规", "example": "Modern companies want to hire employees who can think outside the box."}
+      ]
+    },
+    {
+      "week": 28,
+      "unit": 8,
+      "theme": "Work & Money (Advanced)",
+      "newWords": [
+        {"word": "Disparity", "pos": "N", "zh": "差距 / 不平等", "forms": "Disparate (Adj)"},
+        {"word": "Materialistic", "pos": "Adj", "zh": "物质主义的", "forms": "Material (N), Materialism (N)"},
+        {"word": "Compensate", "pos": "V", "zh": "补偿 / 支付报酬", "forms": "Compensated (V2/V3), Compensation (N), Compensatory (Adj)"},
+        {"word": "Flourish", "pos": "V", "zh": "繁荣 / 茂盛", "forms": "Flourished (V2/V3), Flourishing (Adj)"},
+        {"word": "Indispensable", "pos": "Adj", "zh": "不可或缺的", "forms": "Indispensably (Adv)"},
+        {"word": "Allocate", "pos": "V", "zh": "分配 / 拨出", "forms": "Allocated (V2/V3), Allocation (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Lucrative", "pos": "Adj", "zh": "利润丰厚的 / 赚钱的", "forms": "Lucratively (Adv)"},
+        {"word": "Delegate", "pos": "V", "zh": "委派(任务) / 授权", "forms": "Delegated (V2/V3), Delegation (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Bread and butter", "forms": "", "explanation": "谋生之道，最主要的收入来源或基本事物。", "zhEquivalent": "饭碗 / 谋生之道", "example": "Teaching English online is my main bread and butter at the moment."},
+        {"idiom": "Save for a rainy day", "forms": "Saved/Saving/Will save", "explanation": "存钱或保留资源以备不时之需。", "zhEquivalent": "未雨绸缪 / 有备无患", "example": "Instead of buying a new phone, I decided to save my money for a rainy day."}
+      ]
+    },
+    {
+      "week": 29,
+      "unit": 9,
+      "theme": "Sports (Advanced)",
+      "newWords": [
+        {"word": "Persevere", "pos": "V", "zh": "坚持不懈 / 不屈不挠", "forms": "Persevered (V2/V3), Perseverance (N)"},
+        {"word": "Solidarity", "pos": "N", "zh": "团结 / 凝聚力", "forms": "Solid (Adj)"},
+        {"word": "Endorse", "pos": "V", "zh": "赞同 / (名人)代言", "forms": "Endorsed (V2/V3), Endorsement (N)"},
+        {"word": "Exert", "pos": "V", "zh": "尽力 / 施加", "forms": "Exerted (V2/V3), Exertion (N)"},
+        {"word": "Amateur", "pos": "N", "zh": "业余爱好者", "forms": "Amateur (Adj)"},
+        {"word": "Prestige", "pos": "N", "zh": "威望 / 声誉", "forms": "Prestigious (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Flourish", "pos": "V", "zh": "繁荣 / 茂盛", "forms": "Flourished (V2/V3), Flourishing (Adj)"},
+        {"word": "Indispensable", "pos": "Adj", "zh": "不可或缺的", "forms": "Indispensably (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Throw in the towel", "forms": "Threw/Throwing/Will throw", "explanation": "承认失败，放弃努力 (源自拳击比赛)。", "zhEquivalent": "认输 / 半途而废", "example": "Learning to play the violin is hard, but you shouldn't throw in the towel yet."},
+        {"idiom": "Give it one's best shot", "forms": "Gave/Giving/Will give", "explanation": "竭尽全力去尝试做某事。", "zhEquivalent": "尽力一搏 / 全力以赴", "example": "I am not great at painting, but I will give it my best shot."}
+      ]
+    },
+    {
+      "week": 30,
+      "unit": 10,
+      "theme": "People/Relationships (Advanced)",
+      "newWords": [
+        {"word": "Empathy", "pos": "N", "zh": "同理心 / 共情", "forms": "Empathize (V), Empathetic (Adj)"},
+        {"word": "Alienate", "pos": "V", "zh": "疏远 / 离间", "forms": "Alienated (V2/V3), Alienation (N)"},
+        {"word": "Harmonious", "pos": "Adj", "zh": "和谐的 / 融洽的", "forms": "Harmony (N), Harmonize (V), Harmonized (V2/V3), Harmoniously (Adv)"},
+        {"word": "Superficial", "pos": "Adj", "zh": "表面的 / 肤浅的", "forms": "Superficiality (N), Superficially (Adv)"},
+        {"word": "Nurture", "pos": "V", "zh": "养育 / 培养", "forms": "Nurtured (V2/V3), Nurture (N), Nurturing (Adj)"},
+        {"word": "Vulnerable", "pos": "Adj", "zh": "脆弱的 / 易受伤害的", "forms": "Vulnerability (N), Vulnerably (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Persevere", "pos": "V", "zh": "坚持不懈 / 不屈不挠", "forms": "Persevered (V2/V3), Perseverance (N)"},
+        {"word": "Endorse", "pos": "V", "zh": "赞同 / (名人)代言", "forms": "Endorsed (V2/V3), Endorsement (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Through thick and thin", "forms": "", "explanation": "在任何情况下，不顾艰难险阻，同甘共苦。", "zhEquivalent": "同甘共苦 / 风雨同舟", "example": "True friends are the ones who stay by your side through thick and thin."},
+        {"idiom": "See the best in someone", "forms": "Saw/Seeing/Will see", "explanation": "专注于发现某人性格或行为中好的一面。", "zhEquivalent": "看到别人的闪光点 / 往好处想", "example": "My mother is a very kind woman who always tries to see the best in everyone."}
+      ]
+    },
+    {
+      "week": 31,
+      "unit": 11,
+      "theme": "Organizations/Volunteering (Advanced)",
+      "newWords": [
+        {"word": "Philanthropy", "pos": "N", "zh": "慈善事业 / 博爱", "forms": "Philanthropist (N), Philanthropic (Adj)"},
+        {"word": "Marginalize", "pos": "V", "zh": "使边缘化 / 排斥", "forms": "Marginalized (V2/V3/Adj), Marginalization (N)"},
+        {"word": "Initiative", "pos": "N", "zh": "倡议 / 主动性", "forms": "Initiate (V), Initiated (V2/V3)"},
+        {"word": "Mobilize", "pos": "V", "zh": "动员 / 调动", "forms": "Mobilized (V2/V3), Mobilization (N)"},
+        {"word": "Empower", "pos": "V", "zh": "授权 / 使能够", "forms": "Empowered (V2/V3), Empowerment (N), Empowering (Adj)"},
+        {"word": "Altruistic", "pos": "Adj", "zh": "利他的 / 无私的", "forms": "Altruism (N), Altruistically (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Empathy", "pos": "N", "zh": "同理心 / 共情", "forms": "Empathize (V), Empathetic (Adj)"},
+        {"word": "Vulnerable", "pos": "Adj", "zh": "脆弱的 / 易受伤害的", "forms": "Vulnerability (N), Vulnerably (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Do one's bit", "forms": "Did/Doing/Will do", "explanation": "尽自己的一份力量或责任。", "zhEquivalent": "尽绵薄之力 / 尽本分", "example": "Everyone should do their bit to help clean up the local park."},
+        {"idiom": "Step up to the plate", "forms": "Stepped/Stepping/Will step", "explanation": "挺身而出，承担责任或应对挑战。", "zhEquivalent": "挺身而出 / 勇挑重担", "example": "When the manager quit, she stepped up to the plate and led the team."}
+      ]
+    },
+    {
+      "week": 32,
+      "unit": 12,
+      "theme": "Achievements (Advanced)",
+      "newWords": [
+        {"word": "Resilience", "pos": "N", "zh": "韧性 / 恢复力", "forms": "Resilient (Adj), Resiliently (Adv)"},
+        {"word": "Unprecedented", "pos": "Adj", "zh": "史无前例的 / 空前的", "forms": "Precedent (N)"},
+        {"word": "Strive", "pos": "V", "zh": "努力奋斗 / 力求", "forms": "Strove (V2), Striven (V3), Striving (N)"},
+        {"word": "Pinnacle", "pos": "N", "zh": "顶峰 / 极点", "forms": ""},
+        {"word": "Surpass", "pos": "V", "zh": "超越 / 胜过", "forms": "Surpassed (V2/V3), Surpassing (Adj)"},
+        {"word": "Tenacious", "pos": "Adj", "zh": "顽强的 / 坚韧的", "forms": "Tenacity (N), Tenaciously (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Empower", "pos": "V", "zh": "授权 / 使能够", "forms": "Empowered (V2/V3), Empowerment (N), Empowering (Adj)"},
+        {"word": "Mobilize", "pos": "V", "zh": "动员 / 调动", "forms": "Mobilized (V2/V3), Mobilization (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Against all odds", "forms": "", "explanation": "在面临极大困难或看似毫无希望的情况下取得了成功。", "zhEquivalent": "排除万难 / 逆境中取胜", "example": "Against all odds, he managed to build a successful business from scratch."},
+        {"idiom": "Go the extra mile", "forms": "Went/Going/Will go", "explanation": "付出比预期或要求更多的努力。", "zhEquivalent": "加倍努力 / 精益求精", "example": "She is an amazing student who always goes the extra mile with her homework."}
+      ]
+    },
+    {
+      "week": 33,
+      "unit": 13,
+      "theme": "Environment (Advanced)",
+      "newWords": [
+        {"word": "Biodiversity", "pos": "N", "zh": "生物多样性", "forms": "Diverse (Adj)"},
+        {"word": "Irreversible", "pos": "Adj", "zh": "不可逆转的", "forms": "Reverse (V/N), Reversible (Adj), Irreversibly (Adv)"},
+        {"word": "Mitigate", "pos": "V", "zh": "减轻 / 缓和", "forms": "Mitigated (V2/V3), Mitigation (N), Mitigating (Adj)"},
+        {"word": "Deplete", "pos": "V", "zh": "耗尽 / 大量减少", "forms": "Depleted (V2/V3), Depletion (N)"},
+        {"word": "Detrimental", "pos": "Adj", "zh": "有害的 / 不利的", "forms": "Detriment (N), Detrimentally (Adv)"},
+        {"word": "Ecological", "pos": "Adj", "zh": "生态的", "forms": "Ecology (N), Ecologically (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Resilience", "pos": "N", "zh": "韧性 / 恢复力", "forms": "Resilient (Adj), Resiliently (Adv)"},
+        {"word": "Unprecedented", "pos": "Adj", "zh": "史无前例的 / 空前的", "forms": "Precedent (N)"}
+      ],
+      "idioms": [
+        {"idiom": "A drop in the ocean", "forms": "", "explanation": "与所需量相比微不足道的一点点。", "zhEquivalent": "沧海一粟 / 杯水车薪", "example": "My small donation is just a drop in the ocean, but I hope it helps."},
+        {"idiom": "Wipe out", "forms": "Wiped/Wiping/Will wipe", "explanation": "彻底摧毁或消灭某物。", "zhEquivalent": "彻底消灭 / 灭绝", "example": "If we don't stop polluting, we might wipe out entire species of animals."}
+      ]
+    },
+    {
+      "week": 34,
+      "unit": 14,
+      "theme": "Technology (Advanced)",
+      "newWords": [
+        {"word": "Indispensable", "pos": "Adj", "zh": "不可或缺的", "forms": "Indispensably (Adv)"},
+        {"word": "Algorithm", "pos": "N", "zh": "算法", "forms": "Algorithmic (Adj)"},
+        {"word": "Automate", "pos": "V", "zh": "使自动化", "forms": "Automated (V2/V3/Adj), Automation (N), Automatic (Adj)"},
+        {"word": "Sophisticated", "pos": "Adj", "zh": "复杂的 / 精密的 / 老练的", "forms": "Sophistication (N)"},
+        {"word": "Obsolete", "pos": "Adj", "zh": "废弃的 / 淘汰的", "forms": "Obsolescence (N)"},
+        {"word": "Paradigm", "pos": "N", "zh": "范例 / 模式", "forms": "Paradigmatic (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Mitigate", "pos": "V", "zh": "减轻 / 缓和", "forms": "Mitigated (V2/V3), Mitigation (N), Mitigating (Adj)"},
+        {"word": "Irreversible", "pos": "Adj", "zh": "不可逆转的", "forms": "Reverse (V/N), Reversible (Adj), Irreversibly (Adv)"}
+      ],
+      "idioms": [
+        {"idiom": "Light years ahead", "forms": "", "explanation": "在发展或技术上遥遥领先于其他人。", "zhEquivalent": "遥遥领先 / 望尘莫及", "example": "The new AI technology is light years ahead of what we had ten years ago."},
+        {"idiom": "Reinvent the wheel", "forms": "Reinvented/Reinventing/Will reinvent", "explanation": "白费力气去重新发明已经存在且有效的东西。", "zhEquivalent": "多此一举 / 重新发明轮子", "example": "The software already works perfectly, so there is no need to reinvent the wheel."}
+      ]
+    },
+    {
+      "week": 35,
+      "unit": 15,
+      "theme": "Culture/Customs (Advanced)",
+      "newWords": [
+        {"word": "Homogenize", "pos": "V", "zh": "使同化 / 使趋同", "forms": "Homogenized (V2/V3), Homogeneous (Adj), Homogeneity (N)"},
+        {"word": "Assimilate", "pos": "V", "zh": "吸收 / 融入 (文化)", "forms": "Assimilated (V2/V3), Assimilation (N)"},
+        {"word": "Stereotype", "pos": "N/V", "zh": "刻板印象", "forms": "Stereotyped (V2/V3/Adj), Stereotypical (Adj)"},
+        {"word": "Preserve", "pos": "V", "zh": "保护 / 保存", "forms": "Preserved (V2/V3), Preservation (N), Preservative (N)"},
+        {"word": "Patriotism", "pos": "N", "zh": "爱国主义", "forms": "Patriot (N), Patriotic (Adj)"},
+        {"word": "Linguistic", "pos": "Adj", "zh": "语言的 / 语言学的", "forms": "Linguistics (N), Linguist (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Sophisticated", "pos": "Adj", "zh": "复杂的 / 精密的 / 老练的", "forms": "Sophistication (N)"},
+        {"word": "Paradigm", "pos": "N", "zh": "范例 / 模式", "forms": "Paradigmatic (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "A melting pot", "forms": "", "explanation": "大熔炉，指不同文化、种族融合的地方。", "zhEquivalent": "文化大熔炉", "example": "New York City is known around the world as a cultural melting pot."},
+        {"idiom": "Culture shock", "forms": "", "explanation": "在进入陌生的文化环境中感到的困惑和不安。", "zhEquivalent": "文化冲击", "example": "When I first moved to China from the UK, I experienced a lot of culture shock."}
+      ]
+    },
+    {
+      "week": 36,
+      "unit": 16,
+      "theme": "Modern Living/City vs Country (Advanced)",
+      "newWords": [
+        {"word": "Urbanization", "pos": "N", "zh": "城市化", "forms": "Urbanize (V), Urbanized (V2/V3/Adj), Urban (Adj)"},
+        {"word": "Displace", "pos": "V", "zh": "迫使离开 / 取代", "forms": "Displaced (V2/V3/Adj), Displacement (N)"},
+        {"word": "Anonymous", "pos": "Adj", "zh": "匿名的 / 不具名的", "forms": "Anonymity (N), Anonymously (Adv)"},
+        {"word": "Amenity", "pos": "N", "zh": "便利设施", "forms": "Amenities (N)"},
+        {"word": "Alienation", "pos": "N", "zh": "疏远 / 异化感", "forms": "Alienate (V), Alienated (V2/V3), Alien (Adj/N)"},
+        {"word": "Sprawl", "pos": "N/V", "zh": "蔓延 / 无计划的扩展", "forms": "Sprawled (V2/V3), Sprawling (Adj)"}
+      ],
+      "recycledWords": [
+        {"word": "Homogenize", "pos": "V", "zh": "使同化 / 使趋同", "forms": "Homogenized (V2/V3), Homogeneous (Adj), Homogeneity (N)"},
+        {"word": "Preserve", "pos": "V", "zh": "保护 / 保存", "forms": "Preserved (V2/V3), Preservation (N), Preservative (N)"}
+      ],
+      "idioms": [
+        {"idiom": "Concrete jungle", "forms": "", "explanation": "钢筋水泥的丛林，指人口密集且缺乏绿色的现代大都市。", "zhEquivalent": "钢铁森林 / 钢筋水泥丛林", "example": "Sometimes living in this concrete jungle makes me miss the green trees of my hometown."},
+        {"idiom": "Rat race", "forms": "", "explanation": "激烈且永无休止的竞争，通常指城市中的职场压力。", "zhEquivalent": "疯狂竞争 / 尔虞我诈", "example": "He decided to leave his corporate job to escape the daily rat race."}
+      ]
+    },
+    {
+      "week": 37,
+      "unit": 17,
+      "theme": "Fashion/Shopping (Advanced)",
+      "newWords": [
+        {"word": "Consumerism", "pos": "N", "zh": "消费主义", "forms": "Consume (V), Consumed (V2/V3), Consumer (N)"},
+        {"word": "Superficial", "pos": "Adj", "zh": "表面的 / 肤浅的", "forms": "Superficiality (N), Superficially (Adv)"},
+        {"word": "Status", "pos": "N", "zh": "地位 / 身份", "forms": ""},
+        {"word": "Manufacture", "pos": "V", "zh": "大量制造 / 生产", "forms": "Manufactured (V2/V3), Manufacturer (N), Manufacturing (N)"},
+        {"word": "Impulsive", "pos": "Adj", "zh": "冲动的", "forms": "Impulse (N), Impulsively (Adv)"},
+        {"word": "Endorse", "pos": "V", "zh": "认可 / (名人)代言", "forms": "Endorsed (V2/V3), Endorsement (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Anonymous", "pos": "Adj", "zh": "匿名的 / 不具名的", "forms": "Anonymity (N), Anonymously (Adv)"},
+        {"word": "Alienation", "pos": "N", "zh": "疏远 / 异化感", "forms": "Alienate (V), Alienated (V2/V3), Alien (Adj/N)"}
+      ],
+      "idioms": [
+        {"idiom": "Cost a fortune", "forms": "Cost/Costing/Will cost", "explanation": "花费一大笔钱，极其昂贵。", "zhEquivalent": "价值连城 / 耗资巨大", "example": "I love that designer handbag, but unfortunately, it costs a fortune."},
+        {"idiom": "Keep up with the Joneses", "forms": "Kept/Keeping/Will keep", "explanation": "在物质消费上与周围的人攀比。", "zhEquivalent": "互相攀比", "example": "Buying expensive cars just to keep up with the Joneses is a waste of money."}
+      ]
+    },
+    {
+      "week": 38,
+      "unit": 18,
+      "theme": "Entertainment/Arts (Advanced)",
+      "newWords": [
+        {"word": "Profound", "pos": "Adj", "zh": "深远的 / 深刻的", "forms": "Profundity (N), Profoundly (Adv)"},
+        {"word": "Aesthetic", "pos": "Adj/N", "zh": "美学的 / 审美的", "forms": "Aesthetics (N), Aesthetically (Adv)"},
+        {"word": "Evoke", "pos": "V", "zh": "唤起 / 引起 (情感或记忆)", "forms": "Evoked (V2/V3), Evocation (N), Evocative (Adj)"},
+        {"word": "Subjective", "pos": "Adj", "zh": "主观的", "forms": "Subjectivity (N), Subjectively (Adv)"},
+        {"word": "Contemporary", "pos": "Adj/N", "zh": "当代的 / 同代人", "forms": "Contemporaries (N)"},
+        {"word": "Abstract", "pos": "Adj", "zh": "抽象的", "forms": "Abstraction (N), Abstractly (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Superficial", "pos": "Adj", "zh": "表面的 / 肤浅的", "forms": "Superficiality (N), Superficially (Adv)"},
+        {"word": "Consumerism", "pos": "N", "zh": "消费主义", "forms": "Consume (V), Consumed (V2/V3), Consumer (N)"}
+      ],
+      "idioms": [
+        {"idiom": "A matter of taste", "forms": "", "explanation": "萝卜白菜各有所爱，取决于个人喜好。", "zhEquivalent": "个人喜好问题 / 众口难调", "example": "I didn't like the modern art exhibition, but art is always a matter of taste."},
+        {"idiom": "Set the stage for", "forms": "Set/Setting/Will set", "explanation": "为某事的发生做好准备，打下基础。", "zhEquivalent": "为...拉开序幕 / 创造条件", "example": "The invention of the internet set the stage for modern social media."}
+      ]
+    },
+    {
+      "week": 39,
+      "unit": 19,
+      "theme": "Health/Medicine (Advanced)",
+      "newWords": [
+        {"word": "Sedentary", "pos": "Adj", "zh": "久坐的 / 缺乏运动的", "forms": ""},
+        {"word": "Deteriorate", "pos": "V", "zh": "恶化 / 衰退", "forms": "Deteriorated (V2/V3), Deterioration (N)"},
+        {"word": "Prevalent", "pos": "Adj", "zh": "普遍的 / 盛行的", "forms": "Prevalence (N), Prevail (V)"},
+        {"word": "Holistic", "pos": "Adj", "zh": "整体的 / 全盘的", "forms": "Holism (N), Holistically (Adv)"},
+        {"word": "Longevity", "pos": "N", "zh": "长寿 / 寿命", "forms": ""},
+        {"word": "Chronic", "pos": "Adj", "zh": "慢性的 / 长期的", "forms": "Chronically (Adv)"}
+      ],
+      "recycledWords": [
+        {"word": "Profound", "pos": "Adj", "zh": "深远的 / 深刻的", "forms": "Profundity (N), Profoundly (Adv)"},
+        {"word": "Evoke", "pos": "V", "zh": "唤起 / 引起 (情感或记忆)", "forms": "Evoked (V2/V3), Evocation (N), Evocative (Adj)"}
+      ],
+      "idioms": [
+        {"idiom": "Back on one's feet", "forms": "", "explanation": "(生病或遇到困难后) 完全康复或恢复正常。", "zhEquivalent": "恢复健康 / 东山再起", "example": "After spending a week in the hospital with the flu, I am finally back on my feet."},
+        {"idiom": "Take a toll on", "forms": "Took/Taking/Will take", "explanation": "对某人或某物造成严重的损害或负面影响。", "zhEquivalent": "造成损失 / 产生恶果", "example": "Working late every single night will eventually take a toll on your health."}
+      ]
+    },
+    {
+      "week": 40,
+      "unit": 20,
+      "theme": "The Future (Advanced)",
+      "newWords": [
+        {"word": "Speculate", "pos": "V", "zh": "推测 / 猜测", "forms": "Speculated (V2/V3), Speculation (N), Speculative (Adj)"},
+        {"word": "Loom", "pos": "V", "zh": "逼近 / 阴森地显现 (常指危险)", "forms": "Loomed (V2/V3), Looming (Adj)"},
+        {"word": "Optimum", "pos": "Adj/N", "zh": "最佳的 / 最适宜的", "forms": "Optimal (Adj), Optimize (V)"},
+        {"word": "Dilemma", "pos": "N", "zh": "进退两难的境地 / 困境", "forms": ""},
+        {"word": "Anticipate", "pos": "V", "zh": "预期 / 预料", "forms": "Anticipated (V2/V3), Anticipation (N)"},
+        {"word": "Visionary", "pos": "Adj/N", "zh": "有远见的 / 有远见的人", "forms": "Vision (N)"}
+      ],
+      "recycledWords": [
+        {"word": "Deteriorate", "pos": "V", "zh": "恶化 / 衰退", "forms": "Deteriorated (V2/V3), Deterioration (N)"},
+        {"word": "Prevalent", "pos": "Adj", "zh": "普遍的 / 盛行的", "forms": "Prevalence (N), Prevail (V)"}
+      ],
+      "idioms": [
+        {"idiom": "Only time will tell", "forms": "", "explanation": "只有时间才能证明或揭晓结果。", "zhEquivalent": "时间会证明一切", "example": "Will AI take over all human jobs? Only time will tell."},
+        {"idiom": "Cross that bridge when we come to it", "forms": "Crossed/Crossing/Will cross", "explanation": "船到桥头自然直，到时候再解决问题。", "zhEquivalent": "船到桥头自然直 / 临机应变", "example": "Don't worry about the final exams yet; we will cross that bridge when we come to it."}
+      ]
+    }
+  ]
+}
