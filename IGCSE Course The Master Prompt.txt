@@ -7,6 +7,7 @@ Batch Processing: Never generate more than 5 weeks at a time.
 Data Injection: For each week, I must look at the provided "Vocabulary Tables" data and extract exactly: 6 New Words + 2 Recycled Words + 2 Idioms.
 
 ⚠️ CRITICAL: The 2 Recycled Words MUST be included in the Vocabulary Table (as a separate row or integrated) AND they MUST be used and **bolded** in the Transcoded Input and Model Answer texts.
+**CLARIFICATION:** The recycled words must be added to the ACTUAL vocabulary list (the table with English/Chinese meanings) just like the new words, NOT just mentioned in a note below the table. They must include their Chinese gloss/meaning.
 
 IGCSE Speaking Criteria Alignment: All generated texts and tasks must model the core IGCSE assessment goals:
 
