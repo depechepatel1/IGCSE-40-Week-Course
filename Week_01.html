@@ -47,12 +47,11 @@
 
         /* Cover Page Specific Styles */
         .cover-page {
-            /* Updated gradient for a softer, more professional look */
-            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background: url('https://res.cloudinary.com/daujjfaqg/image/upload/v1771567490/Textbook_Cover_usinxj.jpg') no-repeat center center;
+            background-size: cover;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Vertically center the content */
-            text-align: center;
+            justify-content: center;
             border: 1px solid #ddd;
         }
         .cover-content {
@@ -60,59 +59,57 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            /* Wrap content in a floating window with pastel background */
-            background: #fdfefe; /* Very light off-white/cyan tint */
-            border: 1px solid #d5dbdb;
-            border-radius: 15px;
-            padding: 50px 40px;
-            margin: 40px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Softer, larger shadow */
+            align-items: flex-end; /* Align content to the right */
+            text-align: right;
+            padding: 50px 60px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .cover-title {
-            font-family: 'Playfair Display', serif; /* Elegant serif for title */
-            font-size: 2.8em; /* Reduced size */
-            color: #2c3e50; /* Dark slate */
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8em;
+            color: #000000;
+            margin-bottom: 10px;
             font-weight: 700;
-            letter-spacing: 1px;
-            line-height: 1.2;
+            line-height: 1.1;
         }
         .cover-subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.6em;
-            color: #e67e22; /* Muted orange/carrot instead of harsh red */
-            margin-bottom: 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.0em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-style: italic;
+            font-weight: 400;
         }
         .cover-week {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4em;
-            color: #34495e;
-            background: #ecf0f1; /* Light gray pill */
-            padding: 12px 35px;
-            border-radius: 50px;
-            margin-bottom: 45px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            border: 1px solid #bdc3c7;
+            color: #000000;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
         }
         .target-band {
-            font-size: 1.1em;
-            color: #7f8c8d;
-            font-style: italic;
+            font-size: 1.2em;
+            color: #000000;
+            font-family: 'Montserrat', sans-serif;
             margin-top: 10px;
+            border-top: 2px solid #000;
+            padding-top: 15px;
+            display: inline-block;
         }
         .cover-footer {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9em;
-            color: #95a5a6;
-            margin-top: 40px;
+            color: #000000;
+            margin-top: auto;
+            margin-bottom: 30px;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
+            align-self: center; /* Force center alignment for footer */
+            text-align: center;
         }
 
         /* Standard Content Styles */
