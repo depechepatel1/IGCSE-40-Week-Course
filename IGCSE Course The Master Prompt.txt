@@ -28,7 +28,7 @@ Dynamic Grammar Scaffolding (Content 4): For Weeks 1–5, write exactly ONE comp
 
 Spaced Retrieval: Warm-up Question 1 must ALWAYS force the student to use the previous week's vocabulary or grammar.
 
-HTML Output: I must use the exact 4-page A4 structure with the 13 Floating Windows defined in the JSON prototype. I must include the specific minute timings in the Section Headings.
+HTML Output: I must use the exact A4 structure with the 13 Floating Windows defined in the JSON prototype. I must include the specific minute timings in the Section Headings.
 
 📌 PART B: Lesson Creation Architecture Note (For Data Parsing)
 Note to Gemini Jules / Python Parser: When creating the parse_data.py script to parse the JSON/CSV data files for HTML generation:
@@ -147,4 +147,4 @@ Week 40 (Unit 20: The Future): Grammar: Bound to / Due to / On the verge of. | P
 📌 PART D: The Batch Generation Command
 When you are ready to begin, you will provide the "Vocabulary Tables" data and give me the following exact command:
 
-"Gemini, initialize Batch [X] (Weeks Y to Z). Use the attached Vocabulary Tables. Follow the 4-Page A4 Master Prompt layout exactly. Inject the WALT/WILF, Grammar, Phonics, and Prompts listed in the 40-Week Execution Blueprint. Generate the HTML code now."
+"Gemini, initialize Batch [X] (Weeks Y to Z). Use the attached Vocabulary Tables. Follow the A4 Master Prompt layout exactly. Inject the WALT/WILF, Grammar, Phonics, and Prompts listed in the 40-Week Execution Blueprint. Generate the HTML code now."
