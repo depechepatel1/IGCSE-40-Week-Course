@@ -58,41 +58,40 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end; /* Align content to the bottom */
             align-items: flex-end; /* Align content to the right */
             text-align: right;
             padding: 50px 60px;
             width: 100%;
             box-sizing: border-box;
         }
+        /* Shared style for all text on cover page to ensure bold black with white border */
+        .cover-content, .cover-title, .cover-subtitle, .cover-week, .target-band, .cover-footer, .cover-content p {
+            color: #000000 !important;
+            font-weight: 700 !important;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
         .cover-title {
             font-family: 'Playfair Display', serif;
             font-size: 3.8em;
-            color: #000000;
             margin-bottom: 10px;
-            font-weight: 700;
             line-height: 1.1;
         }
         .cover-subtitle {
             font-family: 'Playfair Display', serif;
             font-size: 2.0em;
-            color: #2c3e50;
             margin-bottom: 30px;
             font-style: italic;
-            font-weight: 400;
         }
         .cover-week {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4em;
-            color: #000000;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-weight: 700;
         }
         .target-band {
             font-size: 1.2em;
-            color: #000000;
             font-family: 'Montserrat', sans-serif;
             margin-top: 10px;
             border-top: 2px solid #000;
@@ -102,10 +101,8 @@
         .cover-footer {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9em;
-            color: #000000;
-            margin-top: auto;
+            margin-top: 30px; /* Changed from auto to fixed spacing since we are justifying end */
             margin-bottom: 30px;
-            font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
             align-self: center; /* Force center alignment for footer */
@@ -259,10 +256,11 @@
 <div class="a4-page cover-page">
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking /<br>IELTS Prep Course</h1>
+        <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
         <div class="cover-week">Week 1: Leisure & Free Time (Unit 1)</div>
         
         <h2 class="cover-subtitle">Semester 1: Foundation Phase</h2>
-        <p class="target-band">Band 5.0 ➔ 6.0 Target</p>
+        <p class="target-band">IELTS Band 5 - 6</p>
         
         <div class="cover-footer">
             © Jinhua New Oriental Academy English Department Curriculum
