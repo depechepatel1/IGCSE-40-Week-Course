@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 17: Fashion/Shopping (Unit 17)</title>
+    <!-- Import Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #2c3e50;
+        }
+        .a4-page {
+            width: 210mm;
+            height: 297mm; /* Changed from min-height to height for flexbox filling */
+            background: white;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            padding: 15mm 20mm; /* Reduced top/bottom padding from 20mm to 15mm */
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Enable flex layout for children */
+            flex-direction: column;
+        }
+        @media print {
+            body {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+                width: 100%;
+                height: 100vh; /* Ensure full page height for flexbox */
+            }
+        }
+
+        /* Cover Page Specific Styles */
+        .cover-page {
+            background: url('https://res.cloudinary.com/daujjfaqg/image/upload/v1771567490/Textbook_Cover_usinxj.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #ddd;
+        }
+        .cover-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Align content to the bottom */
+            align-items: flex-end; /* Align content to the right */
+            text-align: right;
+            padding: 50px 60px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* Shared style for all text on cover page to ensure bold black with white border */
+        .cover-content, .cover-title, .cover-subtitle, .cover-week, .target-band, .cover-footer, .cover-content p {
+            color: #000000 !important;
+            font-weight: 700 !important;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+        .cover-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8em;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+        .cover-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.0em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .cover-week {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .target-band {
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
+            border-top: 2px solid #000;
+            padding-top: 15px;
+            display: inline-block;
+        }
+        .cover-footer {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            margin-top: 30px; /* Changed from auto to fixed spacing since we are justifying end */
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            align-self: center; /* Force center alignment for footer */
+            text-align: center;
+        }
+
+        /* Standard Content Styles */
+        .floating-window {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.15); /* Large drop shadow */
+            page-break-inside: avoid;
+        }
+
+        /* Flex expand class for sections 1 and 2 */
+        .flex-expand {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically if expanded */
+        }
+
+        /* Note Paper Style for Page 2 */
+        .notes-window {
+            height: 100%; /* Fill the page */
+            background-color: #fff9c4; /* Pastel Yellow Background */
+            /* Writing lines created by CSS gradient - using a darker line color for visibility on yellow */
+            background-image: linear-gradient(#d4ac0d 1px, transparent 1px);
+            background-size: 100% 1.5em; /* Line spacing */
+            padding-top: 2em; /* Top margin for lines */
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+            border: 1px solid #f1c40f; /* Slight border to define the 'window' */
+            border-radius: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .blue-text { color: #2980b9; font-weight: bold; }
+        .yellow-highlight { background-color: #fff9c4; padding: 0 2px; border-radius: 2px; }
+
+        /* Table Styling */
+        table { width: 100%; border-collapse: collapse; font-size: 0.9em; box-shadow: 2px 2px 8px rgba(0,0,0,0.05); }
+        th {
+            background-color: #d6eaf8; /* Pastel Blue Header */
+            color: #2c3e50;
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+        }
+        td { padding: 10px; border: 1px solid #bdc3c7; line-height: 1.4; }
+
+        /* Force Pastel Yellow Background on all body rows for Lesson Plan and Vocab tables */
+        .lesson-plan-table tbody tr {
+            background-color: #fff9c4 !important; /* Pastel Yellow */
+        }
+        .vocab-table tbody tr {
+            background-color: #fff9c4 !important; /* Pastel Yellow */
+        }
+
+        h1, h2, h3, h4 { margin-top: 0; font-family: 'Montserrat', sans-serif; }
+        h4 { font-weight: 700; letter-spacing: 0.5px; }
+
+        /* Utility */
+        .flex-row { display: flex; justify-content: space-between; margin-bottom: 15px; }
+        .half-width { width: 48%; }
+
+        /* Spider Diagram Styles */
+        .section-spider {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow the section to grow */
+        }
+        .spider-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr; /* Use fractional units to fill available height */
+            gap: 10px;
+            position: relative;
+            margin-top: 15px;
+            flex-grow: 1; /* Allow the grid itself to grow */
+            min-height: 300px; /* Ensure a reasonable minimum height */
+        }
+        .spider-quadrant {
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #444;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+            background-color: #d6eaf8; /* All Pastel Blue */
+        }
+        /* Top Left - Text in Top Left Corner */
+        .quad-tl { justify-content: flex-start; align-items: flex-start; text-align: left; }
+        /* Top Right - Text in Top Right Corner */
+        .quad-tr { justify-content: flex-end; align-items: flex-start; text-align: right; }
+        /* Bottom Left - Text in Bottom Left Corner */
+        .quad-bl { justify-content: flex-start; align-items: flex-end; text-align: left; }
+        /* Bottom Right - Text in Bottom Right Corner */
+        .quad-br { justify-content: flex-end; align-items: flex-end; text-align: right; }
+
+        .spider-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #2c3e50;
+            padding: 15px 25px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-weight: bold;
+            color: #2c3e50;
+            z-index: 10;
+            text-align: center;
+        }
+
+        /* Writing Space Styles */
+        .section-writing {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow section to grow */
+        }
+        .writing-lines-container {
+            flex-grow: 1; /* Allow lines container to fill space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly; /* Distribute lines evenly */
+        }
+
+        /* Exit Ticket Styles */
+        .section-exit {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow section to grow */
+        }
+        .exit-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .feedback-box {
+            flex-grow: 1;
+            border: 1px dashed #bdc3c7;
+            background-color: #fdfefe;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER PAGE -->
+<div class="a4-page cover-page">
+    <div class="cover-content">
+        <h1 class="cover-title">IGCSE Speaking /<br>IELTS Prep Course</h1>
+        <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
+        <div class="cover-week">Week 17: Fashion/Shopping (Unit 17)</div>
+
+        <h2 class="cover-subtitle">Semester 1: Foundation Phase</h2>
+        <p class="target-band">IELTS Band 5 - 6</p>
+
+        <div class="cover-footer">
+            © Jinhua New Oriental Academy English Department Curriculum
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 2: NOTES PAGE (FULL PAGE) -->
+<!-- Re-added padding: 20mm to match other pages, but let the window fill the content box -->
+<div class="a4-page" style="background-color: #fafafa;">
+    <div class="notes-window">
+        <!-- Writing lines created by CSS background gradient -->
+    </div>
+</div>
+
+<!-- PAGE 3: LESSON PLAN -->
+<div class="a4-page">
+    <h2 style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">QTS Aligned Teacher Lesson Plan</h2>
+
+    <div class="flex-row">
+        <!-- Blue Support -->
+        <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
+            <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
+            <hr>
+            <p><strong>WALT (We Are Learning To):</strong> Discuss style and shopping habits. Use Causative Verbs to talk about services you pay for.</p>
+        </div>
+        <!-- Blue Support -->
+        <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
+            <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
+            <hr>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
+        </div>
+    </div>
+
+    <div class="flex-row">
+        <!-- Green Support -->
+        <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
+            <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
+            <hr>
+            <p>Sentence frames: <em>"I had my hair cut..."</em> and <em>"I like to browse..."</em></p>
+        </div>
+        <!-- Green Support -->
+        <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
+            <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
+            <hr>
+            <p>Critique the impact of fast fashion on the environment.</p>
+        </div>
+    </div>
+
+    <div class="floating-window" style="background-color: white;">
+        <h4 style="color: #2c3e50;">⏱️ Lesson Plan Table (80 Minutes)</h4>
+        <table class="lesson-plan-table">
+            <thead>
+            <tr>
+                <th style="width: 12%;">Timing</th>
+                <th style="width: 44%;">Teacher Actions (QTS Steps)</th>
+                <th style="width: 44%;">Student Actions & Notes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>0-10m</strong></td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Warm-Up & Baseline:</strong> Introduce WALT/WILF. Direct students to Sec 4. Circulate.</td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Pair Work:</strong> Students discuss Warm-Up Qs.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>10-25m</strong></td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Input & Pronunciation:</strong> Read Sec 5 aloud. Teach Sec 1 & 2.</td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Active Listening:</strong> Annotate handouts. Choral repetition.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>25-45m</strong></td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Drill (Brainstorming):</strong> Reveal Sec 6. Model Spidergram. Check Sec 8.</td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Mind-Mapping:</strong> Build spidergrams, draft sentence.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>45-70m</strong></td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Speaking Circuit (4-3-2):</strong> Explain Sec 9. Manage timer strictly. Note errors.</td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Fluency Practice:</strong> Speaker speaks. Listener tallies.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>70-80m</strong></td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Exit Ticket & HW:</strong> Write errors on board. Supervise Sec 11. Explain HW.</td>
+                <td style="padding: 8px; border: 1px solid #eee;"><strong>Consolidation:</strong> Correct errors. Log HW.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- PAGE 4: HANDOUT PART 1 (Sections 1-3) -->
+<div class="a4-page">
+    <h2 style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">Student Handout</h2>
+    <!-- Red Section -->
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+        <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
+            <p style="margin: 0 0 5px 0;"><strong>Causative Verbs (Have/Get something done)</strong> <br>• <strong>Structure:</strong> Have/Get + Object + V3.<br>• <strong>Meaning:</strong> You pay/ask someone else to do it for you.<br>• <em>I had my hair cut.</em> (I didn't cut it myself).<br><span style="color: #7f8c8d; font-size: 0.9em;">使役动词：Have/Get + 宾语 + 过去分词。表示“请/让别人做某事” (例如: I had my hair cut = 我去理发了)。</span></p>
+        </div>
+    </div>
+
+    <!-- Orange Section -->
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+        <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
+            <p style="margin: 0 0 5px 0;"><strong>Syllable Counting</strong> <br>Clap the syllables in long words to say them clearly.<br>• <em>Com-for-ta-ble</em> (4)<br>• <em>Acc-ess-or-ies</em> (4)<br><span style="color: #7f8c8d; font-size: 0.9em;">音节计数：通过拍手来数长单词的音节，确保发音清晰。</span></p>
+        </div>
+    </div>
+
+    <!-- Blue Section -->
+    <div class="floating-window" style="border-left: 6px solid #2980b9; background-color: #ebf5fb;">
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 3. Vocabulary Table (4 mins)</h4>
+        <table class="vocab-table">
+            <thead>
+            <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
+            </thead>
+            <tbody>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Trendy</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">流行的 / 时髦的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Garment</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">衣服 / 服装</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Browse</strong> (V/N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">浏览 / 随便看看</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Brand</strong> (N/V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">品牌 / 打上烙印</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Affordable</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">负担得起的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Vintage</strong> (Adj/N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">复古的 / 经典的老东西</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Hectic (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">忙碌的 / 繁忙的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Tranquil (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">宁静的 / 安静的</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Dress to kill</strong> (盛装打扮 / 惊艳全场)
+                <br><em>Explanation:</em> 穿着极其迷人、引人注目。
+                <br><em>Example:</em> She walked into the party dressed to kill in a beautiful red gown.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: Shop till you drop</strong> (血拼到底)
+                <br><em>Explanation:</em> 疯狂购物，直到累得走不动。
+                <br><em>Example:</em> During the winter sales, my friends and I usually shop till we drop.</td></tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- PAGE 5: HANDOUT PART 2 (Sections 4-6) -->
+<div class="a4-page">
+    <!-- Purple Section -->
+    <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
+        <ol style="margin-bottom: 0; padding-left: 20px;">
+
+            <li>(Section 5 Question) <strong>Do you prefer buying <em>trendy</em> clothes or <em>vintage</em> ones?</strong></li>
+
+            <li>Is shopping in a mall too <strong>hectic</strong> for you? (Recycled)</li>
+
+            <li>What is your favorite clothing <strong>brand</strong>?</li>
+
+        </ol>
+    </div>
+
+    <!-- Teal Section (Input) -->
+    <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
+        <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
+            <span style="color: blue;">To be honest,</span> I love fashion. <span style="color: blue;">Yesterday,</span> I went to the mall to <strong>browse</strong> some shops. <span style="color: blue;">Actually,</span> I wanted to buy a <strong>trendy</strong> new <strong>garment</strong> for a party. <mark style="background-color: yellow;">Because I wanted to look perfect, I <strong>had my hair done</strong> at a salon.</mark> <span style="color: blue;">However,</span> designer <strong>brand</strong>s are not always <strong>affordable</strong>. <span style="color: blue;">Sometimes,</span> I prefer <strong>vintage</strong> clothes because they are unique. <mark style="background-color: yellow;">Shopping can be <strong>hectic</strong>, but finding a <strong>tranquil</strong> cafe to rest in helps me relax.</mark> <span style="color: blue;">Tomorrow,</span> I plan to <strong>dress to kill</strong>. <span style="color: blue;">My friends and I</span> will probably <strong>shop till we drop</strong>.
+        </p>
+    </div>
+
+    <!-- Dark Orange Section -->
+    <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
+        <p style="margin:0;"><strong>Describe a favorite item of clothing. You should say:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+
+            <li>What it looks like.</li>
+
+            <li>Where you bought it.</li>
+
+            <li>Why you like it.</li>
+
+        </ul>
+
+        <div class="spider-container">
+            <div class="spider-quadrant quad-tl">
+                Description
+            </div>
+            <div class="spider-quadrant quad-tr">
+                Purchase Place
+            </div>
+            <div class="spider-quadrant quad-bl">
+                Price/Brand
+            </div>
+            <div class="spider-quadrant quad-br">
+                Occasion
+            </div>
+            <div class="spider-center">
+                Favorite Clothing
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 6: HANDOUT PART 3 (Sections 7-9) -->
+<div class="a4-page">
+    <!-- Orange Section (Model) -->
+    <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
+        <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
+            <span style="color: blue;">Well,</span> my favorite item is a black leather jacket. <span style="color: blue;">Actually,</span> it is a <strong>vintage</strong> piece I bought in London. <span style="color: blue;">To be honest,</span> it was quite <strong>affordable</strong> for such a cool <strong>garment</strong>. <mark style="background-color: yellow;">I usually <strong>get it cleaned</strong> professionally to keep it looking new.</mark> <span style="color: blue;">Also,</span> it is very <strong>trendy</strong> and matches everything. <mark style="background-color: yellow;">Even when my life is <strong>hectic</strong>, wearing this jacket makes me feel calm and <strong>tranquil</strong>.</mark> <span style="color: blue;">I love to</span> wear it when I <strong>browse</strong> the city streets. <span style="color: blue;">To sum up,</span> it helps me <strong>dress to kill</strong> whenever I go out.
+        </p>
+    </div>
+
+    <!-- Gray Section -->
+    <div class="floating-window section-writing" style="border-left: 6px solid #7f8c8d; background-color: #f2f3f4;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 8. Writing Space (10 mins)</h4>
+        <p style="font-size: 0.9em; color: gray;"><em>Draft your keywords and complex sentence here (Do not write a full paragraph):</em></p>
+        <div class="writing-lines-container">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+            <hr style="border: 0; border-bottom: 1px solid #ccc; margin: 15px 0;">
+        </div>
+    </div>
+
+    <!-- Blue Section -->
+    <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+    </div>
+</div>
+
+<!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
+<div class="a4-page">
+    <!-- Purple Section -->
+    <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
+        <p style="font-size: 0.9em; margin-bottom: 0;">How does consumerism affect our perception of status?</p>
+    </div>
+
+    <!-- Orange Section (Exit) -->
+    <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
+        <div class="exit-content-wrapper">
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Causative):</strong> Rewrite using 'have'.<br><br>1. A painter painted my house. -> I __________ my house __________.<br><br>2. The mechanic fixed his car. -> He __________ his car __________.<br><br>3. Someone cut her hair. -> She __________ her hair __________.</p>
+            <div class="feedback-box">
+                <strong>Errors we fixed on the board:</strong>
+            </div>
+            <div class="feedback-box">
+                <strong>New language that stood out:</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-row">
+        <!-- Pink Section -->
+        <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
+            <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the <strong>Week 17 Vocabulary and Model Answer</strong>. Count the syllables in the long words.</p>
+        </div>
+        <!-- Green Section -->
+        <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
+            <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 2 Causative Verb sentences (had/got).</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
