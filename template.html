@@ -120,6 +120,14 @@
             page-break-inside: avoid;
         }
 
+        /* Flex expand class for sections 1 and 2 */
+        .flex-expand {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically if expanded */
+        }
+
         /* Note Paper Style for Page 2 */
         .notes-window {
             height: 100%; /* Fill the page */
@@ -355,17 +363,19 @@
 <div class="a4-page">
     <h2 style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">Student Handout</h2>
     <!-- Red Section -->
-    <div class="floating-window" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
         </div>
     </div>

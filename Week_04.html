@@ -120,6 +120,14 @@
             page-break-inside: avoid;
         }
 
+        /* Flex expand class for sections 1 and 2 */
+        .flex-expand {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically if expanded */
+        }
+
         /* Note Paper Style for Page 2 */
         .notes-window {
             height: 100%; /* Fill the page */
@@ -355,17 +363,19 @@
 <div class="a4-page">
     <h2 style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">Student Handout</h2>
     <!-- Red Section -->
-    <div class="floating-window" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>First Conditional</strong> <br>• <strong>First Conditional:</strong> If + Present Simple, ... will + Verb. (e.g., <em>If it rains, I will take the bus.</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">第一条件句：If + 一般现在时, ... will + 动词原形 (例如: If it rains, I will take the bus.)</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>Sentence Stress in Conditionals</strong> <br>Stress the key words (verbs and nouns) in both parts of the sentence. Emphasize the result!<br><span style="color: #7f8c8d; font-size: 0.9em;">条件句中的重音：重读句子两部分中的关键词 (动词和名词)。强调结果！</span></p>
         </div>
     </div>
@@ -391,9 +401,9 @@
 
             <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Vehicle</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">车辆 / 交通工具</td></tr>
 
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Consume</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">消耗 / 吃喝</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Consume (Recycled)</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">消耗 / 吃喝</td></tr>
 
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Nutritious</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">有营养的</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Nutritious (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">有营养的</td></tr>
 
             <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
 

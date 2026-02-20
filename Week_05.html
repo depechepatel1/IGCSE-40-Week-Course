@@ -120,6 +120,14 @@
             page-break-inside: avoid;
         }
 
+        /* Flex expand class for sections 1 and 2 */
+        .flex-expand {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically if expanded */
+        }
+
         /* Note Paper Style for Page 2 */
         .notes-window {
             height: 100%; /* Fill the page */
@@ -355,17 +363,19 @@
 <div class="a4-page">
     <h2 style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">Student Handout</h2>
     <!-- Red Section -->
-    <div class="floating-window" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>Past Continuous vs. Past Simple</strong> <br>• <strong>Past Continuous:</strong> Was/Were + V-ing (Background action).<br>• <strong>Past Simple:</strong> V-ed (Interrupted action).<br>• <em>While I was sleeping (continuous), the phone rang (simple).</em><br><span style="color: #7f8c8d; font-size: 0.9em;">过去进行时 vs 一般过去时：正在进行的背景动作被打断 (例如: While I was sleeping, the phone rang.)</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
-        <div style="font-size: 0.95em; line-height: 1.3;">
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
             <p style="margin: 0 0 5px 0;"><strong>Weak forms of 'was/were'</strong> <br>In fast speech, 'was' sounds like /wəz/ and 'were' sounds like /wə/. Don't stress them!<br><span style="color: #7f8c8d; font-size: 0.9em;">弱读：在快速语流中，was 读作 /wəz/，were 读作 /wə/。不要重读它们！</span></p>
         </div>
     </div>
@@ -391,9 +401,9 @@
 
             <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Explore</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">探索 / 探险</td></tr>
 
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Congestion</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">拥堵 / 塞车</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Congestion (Recycled)</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">拥堵 / 塞车</td></tr>
 
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Convenient</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">方便的 / 便利的</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Convenient (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">方便的 / 便利的</td></tr>
 
             <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
 
