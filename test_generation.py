@@ -17,9 +17,9 @@ def test_week_01_content():
         # Check specific content
         assert "couch‿potato" in content
 
-        # Check Section 11 Update
-        assert "Section 11. What did you learn today?" in content
-        assert "Reflection:" in content
+        # Check Section 11 Revert (Exit Ticket)
+        assert "Section 11. Exit Ticket" in content
+        assert "Fix the Error" in content
 
 if __name__ == "__main__":
     test_week_01_exists()
