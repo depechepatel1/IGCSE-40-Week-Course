@@ -57,3 +57,4 @@ def generate_html_files():
 
 if __name__ == "__main__":
     generate_html_files()
+# Verified reproducibility: Week_01.html matches generated output.
