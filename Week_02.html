@@ -53,6 +53,7 @@
             flex-direction: column;
             justify-content: center;
             border: 1px solid #ddd;
+            padding: 0 !important; /* Override default page padding */
         }
         .cover-content {
             flex-grow: 1;
@@ -61,7 +62,7 @@
             justify-content: flex-end; /* Align content to the bottom */
             align-items: flex-end; /* Align content to the right */
             text-align: right;
-            padding: 50px 20mm; /* Changed to 20mm to align exactly 2cm from right edge */
+            padding: 50px 20mm 20mm 20mm !important; /* Right/Bottom padding = 20mm (2cm) from edge */
             width: 100%;
             box-sizing: border-box;
         }
@@ -102,7 +103,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9em;
             margin-top: 15px; /* Reduced from 30px to bring closer to text block */
-            margin-bottom: 15px; /* Reduced from 30px to bring closer to bottom */
+            margin-bottom: 0; /* Remove bottom margin, handled by container padding */
             letter-spacing: 1px;
             text-transform: uppercase;
             align-self: center; /* Force center alignment for footer */
@@ -263,7 +264,7 @@
 <!-- PAGE 1: COVER PAGE -->
 <div class="a4-page cover-page">
     <div class="cover-content">
-        <h1 class="cover-title">IGCSE Speaking /<br>IELTS Prep Course</h1>
+        <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
         <div class="cover-week">Week 2: TV & Media (Unit 2)</div>
 
