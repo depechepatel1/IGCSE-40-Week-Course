@@ -61,7 +61,7 @@
             justify-content: flex-end; /* Align content to the bottom */
             align-items: flex-end; /* Align content to the right */
             text-align: right;
-            padding: 50px 60px;
+            padding: 50px 40px; /* Reduced right padding from 60px to 40px to move text further right */
             width: 100%;
             box-sizing: border-box;
         }
@@ -74,8 +74,8 @@
         .cover-title {
             font-family: 'Playfair Display', serif;
             font-size: 3.8em;
-            margin-bottom: 10px;
-            line-height: 1.1;
+            margin-bottom: 5px; /* Reduced from 10px */
+            line-height: 1.0; /* Compacted line height */
         }
         .cover-subtitle {
             font-family: 'Playfair Display', serif;
@@ -86,23 +86,23 @@
         .cover-week {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4em;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Reduced from 20px */
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         .target-band {
             font-size: 1.2em;
             font-family: 'Montserrat', sans-serif;
-            margin-top: 10px;
+            margin-top: 5px; /* Reduced from 10px */
             border-top: 2px solid #000;
-            padding-top: 15px;
+            padding-top: 5px; /* Reduced from 15px */
             display: inline-block;
         }
         .cover-footer {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9em;
-            margin-top: 30px; /* Changed from auto to fixed spacing since we are justifying end */
-            margin-bottom: 30px;
+            margin-top: 15px; /* Reduced from 30px to bring closer to text block */
+            margin-bottom: 15px; /* Reduced from 30px to bring closer to bottom */
             letter-spacing: 1px;
             text-transform: uppercase;
             align-self: center; /* Force center alignment for footer */
@@ -264,10 +264,11 @@
 <div class="a4-page cover-page">
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking /<br>IELTS Prep Course</h1>
-        <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
+        <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
         <div class="cover-week">Week 15: Culture/Customs (Unit 15)</div>
 
-        <h2 class="cover-subtitle">Semester 1: Foundation Phase</h2>
+        <!-- Removed Semester Title as requested -->
+
         <p class="target-band">IELTS Band 5 - 6</p>
 
         <div class="cover-footer">
