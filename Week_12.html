@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week {{ week_number }}: {{ unit_title }}</title>
+    <title>Week 12: Achievements (Unit 12)</title>
     <!-- Import Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -266,7 +266,7 @@
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
-        <div class="cover-week">Week {{ week_number }}: {{ unit_title }}</div>
+        <div class="cover-week">Week 12: Achievements (Unit 12)</div>
 
         <!-- Removed Semester Title as requested -->
 
@@ -295,13 +295,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
             <hr>
-            <p><strong>WALT (We Are Learning To):</strong> {{ walt_content }}</p>
+            <p><strong>WALT (We Are Learning To):</strong> Talk about personal achievements and challenges. Use the Past Perfect to describe events before a past time.</p>
         </div>
         <!-- Blue Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
             <hr>
-            <p><strong>WILF (What I'm Looking For):</strong> {{ wilf_content }}</p>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
         </div>
     </div>
 
@@ -310,13 +310,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
             <hr>
-            <p>{{ support_content }}</p>
+            <p>Sentence frames: <em>"Before I..., I had..."</em> and <em>"I felt proud because I had..."</em></p>
         </div>
         <!-- Green Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
             <hr>
-            <p>{{ stretch_content }}</p>
+            <p>Use narrative structures to tell a compelling story of success against the odds.</p>
         </div>
     </div>
 
@@ -367,20 +367,20 @@
     <!-- Reduced margin-bottom of h2 above to save space -->
 
     <!-- Red Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Past Perfect</strong> <br>• <strong>Structure:</strong> Had + V3.<br>• <strong>Use:</strong> For an action that happened <em>before</em> another past action.<br>• <em>When I arrived, the train <strong>had left</strong>.</em><br><span style="color: #7f8c8d; font-size: 0.9em;">过去完成时：Had + 过去分词。表示“过去的过去”，即在过去某个动作之前已经发生的动作。</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Dropping the 'h'</strong> <br>In rapid speech, 'had' often sounds like 'd. Drop the 'h'.<br>• <em>I'd (I had) finished.</em><br>• <em>She'd (She had) left.</em><br><span style="color: #7f8c8d; font-size: 0.9em;">省音：快速语流中，had 常读作 'd，省略 h 音。</span></p>
         </div>
     </div>
 
@@ -392,19 +392,37 @@
             <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
             </thead>
             <tbody>
-            {% for row in vocab_rows %}
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>{{ row.word }}</strong> ({{ row.type }})</td><td style="padding: 5px; border: 1px solid #bdc3c7; {% if week_number == 2 %}font-size: 0.8em;{% endif %}">{{ row.meaning }}</td></tr>
-            {% endfor %}
 
-            {% if recycled_words_note and recycled_words_note.strip() %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: {{ recycled_words_note }}</td></tr>
-            {% endif %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Accomplish</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">完成 / 实现</td></tr>
 
-            {% for idiom in idioms %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom {{ loop.index }}: {{ idiom.phrase }}</strong> ({{ idiom.meaning }})
-                <br><em>Explanation:</em> {{ idiom.explanation }}
-                <br><em>Example:</em> {{ idiom.example }}</td></tr>
-            {% endfor %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Overcome</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">克服 / 战胜</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Obstacle</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">障碍</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Dedicate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">奉献 / 致力于</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Fulfill</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">履行 / 实现</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Milestone</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">里程碑</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Contribute (Recycled)</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">贡献 / 捐献</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Impact (Recycled)</strong> (N/V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">影响</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Pass with flying colors</strong> (大获全胜 / 成绩斐然)
+                <br><em>Explanation:</em> 以优异的成绩通过考试或完成任务。
+                <br><em>Example:</em> She studied very hard and passed her English exam with flying colors.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: Pay off</strong> (终得回报 / 功夫不负有心人)
+                <br><em>Explanation:</em> 付出的努力最终得到好结果或回报。
+                <br><em>Example:</em> All those late nights of studying finally paid off when I got into a top university.</td></tr>
+
             </tbody>
         </table>
     </div>
@@ -416,9 +434,13 @@
     <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
         <ol style="margin-bottom: 0; padding-left: 20px;">
-            {% for q in warmup_questions %}
-            <li>{{ q }}</li>
-            {% endfor %}
+
+            <li>(Section 5 Question) <strong>What is a major <em>milestone</em> you want to reach?</strong></li>
+
+            <li>How can you <strong>contribute</strong> to your school's success? (Recycled)</li>
+
+            <li>Have you ever faced a difficult <strong>obstacle</strong>?</li>
+
         </ol>
     </div>
 
@@ -426,35 +448,46 @@
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
-            {{ transcoded_input }}
+            <span style="color: blue;">To be honest,</span> learning English was hard for me. <span style="color: blue;">Before I came to this school,</span> I <strong>had</strong> never spoken to a foreigner. <span style="color: blue;">Actually,</span> I had to <strong>overcome</strong> many <strong>obstacle</strong>s. <mark style="background-color: yellow;">I <strong>had dedicated</strong> hours to studying vocabulary before I finally saw an improvement.</mark> <span style="color: blue;">Eventually,</span> my hard work <strong>paid off</strong>. <span style="color: blue;">Also,</span> my teacher's help <strong>had contributed</strong> greatly to my progress. <mark style="background-color: yellow;">By the time I took the exam, I <strong>had accomplished</strong> my goal of learning 500 words.</mark> <span style="color: blue;">It was a big <strong>milestone</strong> when I <strong>passed with flying colors</strong>.</span> <span style="color: blue;">In my opinion,</span> this achievement had a huge <strong>impact</strong> on my confidence to <strong>fulfill</strong> my dreams.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> What is something you are proud of doing?</li>
+                <li><strong>(Hard)</strong> How does failing help people to eventually succeed?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
-        <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
+        <p style="margin:0;"><strong>Describe a difficult task you succeeded in. You should say:</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
-            {% for point in circuit_prompt_points %}
-            <li>{{ point }}</li>
-            {% endfor %}
+
+            <li>What the task was.</li>
+
+            <li>Why it was difficult.</li>
+
+            <li>How you succeeded.</li>
+
         </ul>
 
         <div class="spider-container">
             <div class="spider-quadrant quad-tl">
-                {{ spider_leg_1 }}
+                The Challenge
             </div>
             <div class="spider-quadrant quad-tr">
-                {{ spider_leg_2 }}
+                Difficulties
             </div>
             <div class="spider-quadrant quad-bl">
-                {{ spider_leg_3 }}
+                Efforts Made
             </div>
             <div class="spider-quadrant quad-br">
-                {{ spider_leg_4 }}
+                The Result
             </div>
             <div class="spider-center">
-                {{ spider_center }}
+                Difficult Task
             </div>
         </div>
     </div>
@@ -466,7 +499,7 @@
     <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
         <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
-            {{ model_answer }}
+            <span style="color: blue;">Well,</span> a difficult task I succeeded in was learning to swim. <span style="color: blue;">Actually,</span> I was terrified of water. <span style="color: blue;">Before I started lessons,</span> I <strong>had</strong> never entered a pool. <mark style="background-color: yellow;">Although I was scared, I <strong>had dedicated</strong> my summer to <strong>overcome</strong> this fear.</mark> <span style="color: blue;">To be honest,</span> the biggest <strong>obstacle</strong> was holding my breath. <mark style="background-color: yellow;">After I <strong>had accomplished</strong> swimming one lap, I felt like I <strong>had fulfilled</strong> a big dream.</mark> <span style="color: blue;">My coach's advice <strong>had contributed</strong> a lot to my success.</span> <span style="color: blue;">In the end,</span> my efforts <strong>paid off</strong> and I <strong>passed with flying colors</strong> in the final test. This <strong>milestone</strong> had a lasting <strong>impact</strong> on me.
         </p>
     </div>
 
@@ -489,8 +522,15 @@
     <!-- Blue Section -->
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ listener_task_content }}</p>
-    </div>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Who is a successful person you admire?</li>
+                <li><strong>(Hard)</strong> Do you think success is mostly about hard work or good luck?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -498,14 +538,14 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ fast_finisher_question }}</p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">What role do resilience and tenacity play in overcoming obstacles?</p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
-            <p style="font-size: 0.9em; margin-bottom: 10px;">{{ exit_ticket_content }}</p>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Past Perfect):</strong> Fill in the blanks with 'had' + V3.<br><br>1. When I arrived, the bus ( leave ) __________ __________.<br><br>2. She was hungry because she ( eat / not ) __________ __________ breakfast.<br><br>3. They ( finish ) __________ __________ their work before 5 PM.</p>
             <div class="feedback-box">
                 <strong>Errors we fixed on the board:</strong>
             </div>
@@ -519,12 +559,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week {{ week_number }} Model Answers with vocabulary and repeat until you can repeat each sentence precisely. {{ pre_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 12 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Practice contracting 'had' to 'd.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. {{ post_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 2 sentences with Past Perfect (had + V3).</p>
         </div>
     </div>
 </div>

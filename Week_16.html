@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week {{ week_number }}: {{ unit_title }}</title>
+    <title>Week 16: Modern Living/City vs Country (Unit 16)</title>
     <!-- Import Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -266,7 +266,7 @@
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
-        <div class="cover-week">Week {{ week_number }}: {{ unit_title }}</div>
+        <div class="cover-week">Week 16: Modern Living/City vs Country (Unit 16)</div>
 
         <!-- Removed Semester Title as requested -->
 
@@ -295,13 +295,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
             <hr>
-            <p><strong>WALT (We Are Learning To):</strong> {{ walt_content }}</p>
+            <p><strong>WALT (We Are Learning To):</strong> Compare places and lifestyles. Use 'As... as' to describe similarities and differences.</p>
         </div>
         <!-- Blue Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
             <hr>
-            <p><strong>WILF (What I'm Looking For):</strong> {{ wilf_content }}</p>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
         </div>
     </div>
 
@@ -310,13 +310,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
             <hr>
-            <p>{{ support_content }}</p>
+            <p>Sentence frames: <em>"The city is not as quiet as the country."</em></p>
         </div>
         <!-- Green Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
             <hr>
-            <p>{{ stretch_content }}</p>
+            <p>Use modifiers like 'nowhere near as' or 'just as' for precision.</p>
         </div>
     </div>
 
@@ -367,20 +367,20 @@
     <!-- Reduced margin-bottom of h2 above to save space -->
 
     <!-- Red Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>As... As (Comparisons)</strong> <br>• <strong>As + Adj + As:</strong> To say two things are equal (e.g., <em>He is as tall as me</em>).<br>• <strong>Not as + Adj + As:</strong> To say two things are different (e.g., <em>It is not as hot as yesterday</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">As... As：表示两者程度相同 (和...一样)。Not as... as：表示两者程度不同 (不如...)。</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Linking 's' sounds</strong> <br>When one word ends in 's' and the next starts with a vowel or 's', link them.<br>• <em>Bus_stop</em> (One long 's')<br>• <em>This_is</em> (Link 's' to 'i')<br><span style="color: #7f8c8d; font-size: 0.9em;">连读 s 音：前一个词以 s 结尾，后一个词以元音或 s 开头时，要连读。</span></p>
         </div>
     </div>
 
@@ -392,19 +392,37 @@
             <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
             </thead>
             <tbody>
-            {% for row in vocab_rows %}
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>{{ row.word }}</strong> ({{ row.type }})</td><td style="padding: 5px; border: 1px solid #bdc3c7; {% if week_number == 2 %}font-size: 0.8em;{% endif %}">{{ row.meaning }}</td></tr>
-            {% endfor %}
 
-            {% if recycled_words_note and recycled_words_note.strip() %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: {{ recycled_words_note }}</td></tr>
-            {% endif %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Hectic</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">忙碌的 / 繁忙的</td></tr>
 
-            {% for idiom in idioms %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom {{ loop.index }}: {{ idiom.phrase }}</strong> ({{ idiom.meaning }})
-                <br><em>Explanation:</em> {{ idiom.explanation }}
-                <br><em>Example:</em> {{ idiom.example }}</td></tr>
-            {% endfor %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Tranquil</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">宁静的 / 安静的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Infrastructure</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">基础设施</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Cosmopolitan</strong> (Adj/N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">国际化的 / 世界大都市</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Isolate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">孤立 / 隔离</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Pace</strong> (N/V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">节奏 / 步伐</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Diverse (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">多样的 / 不同的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Heritage (Recycled)</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">遗产 (文化等)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Hustle and bustle</strong> (熙熙攘攘 / 喧嚣)
+                <br><em>Explanation:</em> 熙熙攘攘，喧闹繁华（通常指城市生活）。
+                <br><em>Example:</em> Sometimes I like to escape the hustle and bustle of the city and go to the countryside.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: The best of both worlds</strong> (两全其美)
+                <br><em>Explanation:</em> 两全其美，兼顾两者的优点。
+                <br><em>Example:</em> Living in the suburbs gives me the best of both worlds: quiet nights and easy access to the city.</td></tr>
+
             </tbody>
         </table>
     </div>
@@ -416,9 +434,13 @@
     <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
         <ol style="margin-bottom: 0; padding-left: 20px;">
-            {% for q in warmup_questions %}
-            <li>{{ q }}</li>
-            {% endfor %}
+
+            <li>(Section 5 Question) <strong>Do you prefer a <em>hectic</em> city life or a <em>tranquil</em> country life?</strong></li>
+
+            <li>Is your city <strong>diverse</strong> enough for you? (Recycled)</li>
+
+            <li>What kind of <strong>infrastructure</strong> does a modern city need?</li>
+
         </ol>
     </div>
 
@@ -426,35 +448,46 @@
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
-            {{ transcoded_input }}
+            <span style="color: blue;">To be honest,</span> living in a big city is exciting. <span style="color: blue;">Shanghai</span> is a truly <strong>cosmopolitan</strong> place with a rich <strong>heritage</strong>. <span style="color: blue;">However,</span> the lifestyle can be very <strong>hectic</strong>. <mark style="background-color: yellow;">The <strong>pace</strong> of life is not as slow as in the countryside.</mark> <span style="color: blue;">Also,</span> the <strong>infrastructure</strong> is amazing, isn't it? <span style="color: blue;">But sometimes,</span> people feel <strong>isolate</strong>d in the crowd. <mark style="background-color: yellow;">Although the city is <strong>diverse</strong>, it is not as <strong>tranquil</strong> as my hometown.</mark> <span style="color: blue;">Actually,</span> I love the <strong>hustle and bustle</strong> of the streets. <span style="color: blue;">In my opinion,</span> living here offers <strong>the best of both worlds</strong>: modern convenience and history.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Do you live in a city or the countryside?</li>
+                <li><strong>(Hard)</strong> What are the main advantages of living in a big city?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
-        <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
+        <p style="margin:0;"><strong>Describe the city or town where you live. You should say:</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
-            {% for point in circuit_prompt_points %}
-            <li>{{ point }}</li>
-            {% endfor %}
+
+            <li>Where it is located.</li>
+
+            <li>What parts are interesting.</li>
+
+            <li>Whether you enjoy living there.</li>
+
         </ul>
 
         <div class="spider-container">
             <div class="spider-quadrant quad-tl">
-                {{ spider_leg_1 }}
+                Location
             </div>
             <div class="spider-quadrant quad-tr">
-                {{ spider_leg_2 }}
+                Facilities
             </div>
             <div class="spider-quadrant quad-bl">
-                {{ spider_leg_3 }}
+                Atmosphere
             </div>
             <div class="spider-quadrant quad-br">
-                {{ spider_leg_4 }}
+                My Opinion
             </div>
             <div class="spider-center">
-                {{ spider_center }}
+                My City
             </div>
         </div>
     </div>
@@ -466,7 +499,7 @@
     <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
         <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
-            {{ model_answer }}
+            <span style="color: blue;">Well,</span> I live in Hangzhou. <span style="color: blue;">Actually,</span> it is a beautiful city near Shanghai. <span style="color: blue;">To be honest,</span> the <strong>pace</strong> of life here is quite fast, but not as <strong>hectic</strong> as Beijing. <mark style="background-color: yellow;">The West Lake area is very <strong>tranquil</strong>, whereas the city center is full of <strong>hustle and bustle</strong>.</mark> <span style="color: blue;">Also,</span> the <strong>infrastructure</strong> is modern and convenient. <mark style="background-color: yellow;">It is a <strong>cosmopolitan</strong> city that still preserves its cultural <strong>heritage</strong>.</mark> <span style="color: blue;">Although</span> some areas are crowded, I never feel <strong>isolate</strong>d because the people are <strong>diverse</strong> and friendly. <span style="color: blue;">To sum up,</span> living in Hangzhou is <strong>the best of both worlds</strong>.
         </p>
     </div>
 
@@ -489,8 +522,15 @@
     <!-- Blue Section -->
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ listener_task_content }}</p>
-    </div>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Do you prefer quiet places or busy places?</li>
+                <li><strong>(Hard)</strong> Why are many young people moving from the country to the city?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -498,14 +538,14 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ fast_finisher_question }}</p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">Does rapid urbanization create better amenities or social alienation?</p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
-            <p style="font-size: 0.9em; margin-bottom: 10px;">{{ exit_ticket_content }}</p>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (As... As):</strong> Complete the sentences.<br><br>1. He is ( tall ) __________ __________ me.<br><br>2. This car is not ( fast ) __________ __________ that one.<br><br>3. Is she ( old ) __________ __________ you?</p>
             <div class="feedback-box">
                 <strong>Errors we fixed on the board:</strong>
             </div>
@@ -519,12 +559,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week {{ week_number }} Model Answers with vocabulary and repeat until you can repeat each sentence precisely. {{ pre_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 16 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Link the 's' sounds between words.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. {{ post_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 2 comparisons with 'as... as'.</p>
         </div>
     </div>
 </div>

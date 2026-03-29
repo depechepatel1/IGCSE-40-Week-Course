@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week {{ week_number }}: {{ unit_title }}</title>
+    <title>Week 40: The Future (Advanced) (Unit 20)</title>
     <!-- Import Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -266,7 +266,7 @@
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
-        <div class="cover-week">Week {{ week_number }}: {{ unit_title }}</div>
+        <div class="cover-week">Week 40: The Future (Advanced) (Unit 20)</div>
 
         <!-- Removed Semester Title as requested -->
 
@@ -295,13 +295,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
             <hr>
-            <p><strong>WALT (We Are Learning To):</strong> {{ walt_content }}</p>
+            <p><strong>WALT (We Are Learning To):</strong> Predict humanity's future. Use 'Bound to', 'Due to', and 'On the verge of' for advanced probability.</p>
         </div>
         <!-- Blue Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
             <hr>
-            <p><strong>WILF (What I'm Looking For):</strong> {{ wilf_content }}</p>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
         </div>
     </div>
 
@@ -310,13 +310,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
             <hr>
-            <p>{{ support_content }}</p>
+            <p>Sentence frames: <em>"It is bound to happen..."</em> and <em>"Due to climate change, we..."</em></p>
         </div>
         <!-- Green Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
             <hr>
-            <p>{{ stretch_content }}</p>
+            <p>Discuss the ethical dilemmas of space colonization and AI.</p>
         </div>
     </div>
 
@@ -367,20 +367,20 @@
     <!-- Reduced margin-bottom of h2 above to save space -->
 
     <!-- Red Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Bound to / Due to / On the verge of</strong> <br>• <strong>Bound to:</strong> Certain to happen. <em>It is <strong>bound to</strong> rain.</em><br>• <strong>Due to:</strong> Because of. <em><strong>Due to</strong> the storm, we stopped.</em><br>• <strong>On the verge of:</strong> Very close to happening. <em>We are <strong>on the verge of</strong> a breakthrough.</em><br><span style="color: #7f8c8d; font-size: 0.9em;">高级预测：Bound to (注定), Due to (由于), On the verge of (濒临/即将)。</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Linking in Phrases</strong> <br>Link the words smoothly.<br>• <em>Bound_to</em><br>• <em>Due_to</em><br>• <em>On_the_verge_of</em><br><span style="color: #7f8c8d; font-size: 0.9em;">短语连读：注意这些固定搭配中的连读。</span></p>
         </div>
     </div>
 
@@ -392,19 +392,37 @@
             <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
             </thead>
             <tbody>
-            {% for row in vocab_rows %}
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>{{ row.word }}</strong> ({{ row.type }})</td><td style="padding: 5px; border: 1px solid #bdc3c7; {% if week_number == 2 %}font-size: 0.8em;{% endif %}">{{ row.meaning }}</td></tr>
-            {% endfor %}
 
-            {% if recycled_words_note and recycled_words_note.strip() %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: {{ recycled_words_note }}</td></tr>
-            {% endif %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Speculate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">推测 / 猜测</td></tr>
 
-            {% for idiom in idioms %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom {{ loop.index }}: {{ idiom.phrase }}</strong> ({{ idiom.meaning }})
-                <br><em>Explanation:</em> {{ idiom.explanation }}
-                <br><em>Example:</em> {{ idiom.example }}</td></tr>
-            {% endfor %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Loom</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">逼近 / (危险)阴森地显现</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Optimum</strong> (Adj/N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">最佳的 / 最适宜的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Dilemma</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">进退两难的境地 / 困境</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Anticipate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">预期 / 预料</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Visionary</strong> (Adj/N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">有远见的 / 有远见的人</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Deteriorate (Recycled)</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">恶化 / 衰退</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Prevalent (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">普遍的 / 盛行的</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Only time will tell</strong> (时间会证明一切)
+                <br><em>Explanation:</em> 只有时间才能证明或揭晓结果。
+                <br><em>Example:</em> Will AI take over all human jobs? Only time will tell.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: Cross that bridge when we come to it</strong> (船到桥头自然直)
+                <br><em>Explanation:</em> 船到桥头自然直，到时候再解决问题。
+                <br><em>Example:</em> Don't worry about the final exams yet; we will cross that bridge when we come to it.</td></tr>
+
             </tbody>
         </table>
     </div>
@@ -416,9 +434,13 @@
     <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
         <ol style="margin-bottom: 0; padding-left: 20px;">
-            {% for q in warmup_questions %}
-            <li>{{ q }}</li>
-            {% endfor %}
+
+            <li>(Section 5 Question) <strong>Speculating on the next 50 years, what is humanity's greatest <em>dilemma</em>?</strong></li>
+
+            <li>Is it <strong>prevalent</strong> to fear that society will <strong>deteriorate</strong>? (Recycled)</li>
+
+            <li>What <strong>optimum</strong> future do you <strong>anticipate</strong>?</li>
+
         </ol>
     </div>
 
@@ -426,35 +448,46 @@
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
-            {{ transcoded_input }}
+            <span style="color: blue;">It is exciting to</span> <strong>speculate</strong> about 2070. <span style="color: blue;">However,</span> a climate crisis <strong>looms</strong> over us. <span style="color: blue;">Actually,</span> we face a serious <strong>dilemma</strong>. <mark style="background-color: yellow;"><strong>Due to</strong> pollution, the environment is <strong>bound to</strong> <strong>deteriorate</strong> further unless we act.</mark> <span style="color: blue;">Scientists</span> <strong>anticipate</strong> major changes. <mark style="background-color: yellow;">We are <strong>on the verge of</strong> a breakthrough that could restore the <strong>optimum</strong> balance of nature.</mark> <span style="color: blue;">We need</span> <strong>visionary</strong> leaders. <span style="color: blue;">Otherwise,</span> suffering will become <strong>prevalent</strong>. <span style="color: blue;">Will we succeed?</span> <strong>Only time will tell</strong>. <span style="color: blue;">As for aliens,</span> we will <strong>cross that bridge when we come to it</strong>.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> What do you hope to do next year?</li>
+                <li><strong>(Hard)</strong> How do you think the world will change in the next 50 years?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
-        <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
+        <p style="margin:0;"><strong>Discuss the future of humanity. You should say:</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
-            {% for point in circuit_prompt_points %}
-            <li>{{ point }}</li>
-            {% endfor %}
+
+            <li>Biggest challenges.</li>
+
+            <li>Technological hopes.</li>
+
+            <li>Your prediction.</li>
+
         </ul>
 
         <div class="spider-container">
             <div class="spider-quadrant quad-tl">
-                {{ spider_leg_1 }}
+                Climate
             </div>
             <div class="spider-quadrant quad-tr">
-                {{ spider_leg_2 }}
+                AI/Robots
             </div>
             <div class="spider-quadrant quad-bl">
-                {{ spider_leg_3 }}
+                Space
             </div>
             <div class="spider-quadrant quad-br">
-                {{ spider_leg_4 }}
+                Health
             </div>
             <div class="spider-center">
-                {{ spider_center }}
+                Future Dilemma
             </div>
         </div>
     </div>
@@ -466,7 +499,7 @@
     <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
         <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
-            {{ model_answer }}
+            <span style="color: blue;">It is hard to</span> know what lies ahead. <span style="color: blue;">Actually,</span> a resource war <strong>looms</strong>. <span style="color: blue;">To be honest,</span> this is our biggest <strong>dilemma</strong>. <mark style="background-color: yellow;"><strong>Due to</strong> overpopulation, shortages are <strong>bound to</strong> become <strong>prevalent</strong>.</mark> <span style="color: blue;">However,</span> I <strong>anticipate</strong> that <strong>visionary</strong> inventors will save us. <mark style="background-color: yellow;">We are <strong>on the verge of</strong> finding the <strong>optimum</strong> energy source.</mark> <span style="color: blue;">If not,</span> society will <strong>deteriorate</strong>. <span style="color: blue;">Can we <strong>speculate</strong> on peace?</span> <strong>Only time will tell</strong>. <span style="color: blue;">For now,</span> we tackle today's problems and <strong>cross that bridge when we come to it</strong>.
         </p>
     </div>
 
@@ -489,8 +522,15 @@
     <!-- Blue Section -->
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ listener_task_content }}</p>
-    </div>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Are you excited or worried about the future?</li>
+                <li><strong>(Hard)</strong> What future inventions do you think will be the most useful?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -498,14 +538,14 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ fast_finisher_question }}</p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">Speculating on the next 50 years, what is humanity's greatest dilemma?</p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
-            <p style="font-size: 0.9em; margin-bottom: 10px;">{{ exit_ticket_content }}</p>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Future Phrases):</strong> Match meanings.<br><br>1. Bound to ... &nbsp;&nbsp;&nbsp;&nbsp; A. Because of<br>2. Due to ... &nbsp;&nbsp;&nbsp;&nbsp; B. Close to happening<br>3. On the verge of ... &nbsp;&nbsp;&nbsp;&nbsp; C. Certain to happen</p>
             <div class="feedback-box">
                 <strong>Errors we fixed on the board:</strong>
             </div>
@@ -519,12 +559,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week {{ week_number }} Model Answers with vocabulary and repeat until you can repeat each sentence precisely. {{ pre_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 40 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Practice linking words in phrases.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. {{ post_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 'Bound to', 'Due to', or 'On the verge of'.</p>
         </div>
     </div>
 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week {{ week_number }}: {{ unit_title }}</title>
+    <title>Week 13: Environment (Unit 13)</title>
     <!-- Import Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -266,7 +266,7 @@
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
-        <div class="cover-week">Week {{ week_number }}: {{ unit_title }}</div>
+        <div class="cover-week">Week 13: Environment (Unit 13)</div>
 
         <!-- Removed Semester Title as requested -->
 
@@ -295,13 +295,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
             <hr>
-            <p><strong>WALT (We Are Learning To):</strong> {{ walt_content }}</p>
+            <p><strong>WALT (We Are Learning To):</strong> Discuss environmental issues and solutions. Use 'Going to' vs 'Will' to talk about future plans and predictions.</p>
         </div>
         <!-- Blue Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
             <hr>
-            <p><strong>WILF (What I'm Looking For):</strong> {{ wilf_content }}</p>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
         </div>
     </div>
 
@@ -310,13 +310,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
             <hr>
-            <p>{{ support_content }}</p>
+            <p>Sentence frames: <em>"I am going to..."</em> (Plan) and <em>"I think it will..."</em> (Prediction).</p>
         </div>
         <!-- Green Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
             <hr>
-            <p>{{ stretch_content }}</p>
+            <p>Use future perfect or future continuous for advanced predictions about the planet.</p>
         </div>
     </div>
 
@@ -367,20 +367,20 @@
     <!-- Reduced margin-bottom of h2 above to save space -->
 
     <!-- Red Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Future Intentions (Going to vs. Will)</strong> <br>• <strong>Going to:</strong> Plans or evidence (e.g., <em>I am going to plant a tree</em>).<br>• <strong>Will:</strong> Instant decisions or predictions (e.g., <em>I think it will rain</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">将来时：Going to (计划/迹象), Will (临时决定/预测)。</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Schwa sound in 'going to'</strong> <br>In casual speech, 'going to' often sounds like 'gonna' /gənə/.<br>• <em>I'm going to (gonna) help.</em><br><span style="color: #7f8c8d; font-size: 0.9em;">Going to 的弱读：口语中常读作 'gonna'。</span></p>
         </div>
     </div>
 
@@ -392,19 +392,37 @@
             <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
             </thead>
             <tbody>
-            {% for row in vocab_rows %}
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>{{ row.word }}</strong> ({{ row.type }})</td><td style="padding: 5px; border: 1px solid #bdc3c7; {% if week_number == 2 %}font-size: 0.8em;{% endif %}">{{ row.meaning }}</td></tr>
-            {% endfor %}
 
-            {% if recycled_words_note and recycled_words_note.strip() %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: {{ recycled_words_note }}</td></tr>
-            {% endif %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Conservation</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">保护 / 节约</td></tr>
 
-            {% for idiom in idioms %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom {{ loop.index }}: {{ idiom.phrase }}</strong> ({{ idiom.meaning }})
-                <br><em>Explanation:</em> {{ idiom.explanation }}
-                <br><em>Example:</em> {{ idiom.example }}</td></tr>
-            {% endfor %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Pollution</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">污染</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Sustainable</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">可持续的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Eco-friendly</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">环保的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Habitat</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">栖息地</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Recycle</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">回收利用</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Accomplish (Recycled)</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">完成 / 实现</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Overcome (Recycled)</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">克服 / 战胜</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Go green</strong> (践行环保 / 绿色生活)
+                <br><em>Explanation:</em> 采取环保的生活方式。
+                <br><em>Example:</em> Many families are trying to go green by using less plastic and saving water.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: Tip of the iceberg</strong> (冰山一角)
+                <br><em>Explanation:</em> 指暴露出来的只是问题的一小部分。
+                <br><em>Example:</em> The plastic on the beach is just the tip of the iceberg of ocean pollution.</td></tr>
+
             </tbody>
         </table>
     </div>
@@ -416,9 +434,13 @@
     <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
         <ol style="margin-bottom: 0; padding-left: 20px;">
-            {% for q in warmup_questions %}
-            <li>{{ q }}</li>
-            {% endfor %}
+
+            <li>(Section 5 Question) <strong>What can we do to reduce <em>pollution</em> in our city?</strong></li>
+
+            <li>Have you <strong>overcome</strong> any bad habits to help the environment? (Recycled)</li>
+
+            <li>Is <strong>recycling</strong> popular in your country?</li>
+
         </ol>
     </div>
 
@@ -426,35 +448,46 @@
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
-            {{ transcoded_input }}
+            <span style="color: blue;">To be honest,</span> the earth is in danger. <span style="color: blue;">Nowadays,</span> <strong>pollution</strong> is a huge problem. <span style="color: blue;">Actually,</span> what we see is just the <strong>tip of the iceberg</strong>. <mark style="background-color: yellow;">If we don't protect animal <strong>habitat</strong>s, many species <strong>will</strong> disappear forever.</mark> <span style="color: blue;">Next week,</span> I <strong>am going to</strong> start a <strong>conservation</strong> project at school. <span style="color: blue;">We</span> plan to <strong>recycle</strong> all our plastic waste. <mark style="background-color: yellow;">Although it will be hard to <strong>accomplish</strong> our goals, we must try to <strong>overcome</strong> the difficulties.</mark> <span style="color: blue;">Personally,</span> I want to live a <strong>sustainable</strong> and <strong>eco-friendly</strong> life. <span style="color: blue;">So,</span> I have decided to <strong>go green</strong>.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> What is the weather like today?</li>
+                <li><strong>(Hard)</strong> What are the biggest environmental problems in your country?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
-        <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
+        <p style="margin:0;"><strong>Describe a beautiful natural place you know. You should say:</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
-            {% for point in circuit_prompt_points %}
-            <li>{{ point }}</li>
-            {% endfor %}
+
+            <li>Where it is.</li>
+
+            <li>What it looks like.</li>
+
+            <li>Why you like it.</li>
+
         </ul>
 
         <div class="spider-container">
             <div class="spider-quadrant quad-tl">
-                {{ spider_leg_1 }}
+                Location
             </div>
             <div class="spider-quadrant quad-tr">
-                {{ spider_leg_2 }}
+                Scenery
             </div>
             <div class="spider-quadrant quad-bl">
-                {{ spider_leg_3 }}
+                Activities
             </div>
             <div class="spider-quadrant quad-br">
-                {{ spider_leg_4 }}
+                Feelings
             </div>
             <div class="spider-center">
-                {{ spider_center }}
+                Natural Place
             </div>
         </div>
     </div>
@@ -466,7 +499,7 @@
     <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
         <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
-            {{ model_answer }}
+            <span style="color: blue;">Well,</span> I want to talk about a forest park near my home. <span style="color: blue;">Actually,</span> it is a perfect <strong>habitat</strong> for birds. <span style="color: blue;">To be honest,</span> I <strong>am going to</strong> visit it again this weekend. <mark style="background-color: yellow;">Because the air is so fresh and there is no <strong>pollution</strong>, it is a very <strong>eco-friendly</strong> place.</mark> <span style="color: blue;">However,</span> maintaining this beauty requires <strong>conservation</strong> efforts. <mark style="background-color: yellow;">We must <strong>overcome</strong> laziness and <strong>accomplish</strong> the task of keeping it clean.</mark> <span style="color: blue;">I think</span> more people <strong>will</strong> choose to <strong>go green</strong> if they see this place. <span style="color: blue;">To sum up,</span> it is a <strong>sustainable</strong> paradise.
         </p>
     </div>
 
@@ -489,8 +522,15 @@
     <!-- Blue Section -->
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ listener_task_content }}</p>
-    </div>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Do you recycle plastic and paper at home?</li>
+                <li><strong>(Hard)</strong> What can individuals do to reduce pollution in their daily lives?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -498,14 +538,14 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ fast_finisher_question }}</p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">Is irreversible ecological damage inevitable?</p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
-            <p style="font-size: 0.9em; margin-bottom: 10px;">{{ exit_ticket_content }}</p>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Future):</strong> Circle the correct option.<br><br>1. Look at those clouds! It ( will / is going to ) rain.<br><br>2. I think he ( will / is going to ) be famous one day.<br><br>3. I bought a ticket. I ( will / am going to ) fly to London.</p>
             <div class="feedback-box">
                 <strong>Errors we fixed on the board:</strong>
             </div>
@@ -519,12 +559,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week {{ week_number }} Model Answers with vocabulary and repeat until you can repeat each sentence precisely. {{ pre_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 13 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Practice the 'gonna' sound.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. {{ post_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 'going to' for a plan and 'will' for a prediction.</p>
         </div>
     </div>
 </div>

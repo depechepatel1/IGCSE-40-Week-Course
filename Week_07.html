@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week {{ week_number }}: {{ unit_title }}</title>
+    <title>Week 7: Careers (Unit 7)</title>
     <!-- Import Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -266,7 +266,7 @@
     <div class="cover-content">
         <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
         <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
-        <div class="cover-week">Week {{ week_number }}: {{ unit_title }}</div>
+        <div class="cover-week">Week 7: Careers (Unit 7)</div>
 
         <!-- Removed Semester Title as requested -->
 
@@ -295,13 +295,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">🎯 Learning Objectives</h4>
             <hr>
-            <p><strong>WALT (We Are Learning To):</strong> {{ walt_content }}</p>
+            <p><strong>WALT (We Are Learning To):</strong> Discuss future careers and job requirements. Use Modal Verbs of Obligation to describe duties and rules.</p>
         </div>
         <!-- Blue Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #3498db; background-color: #ebf5fb;">
             <h4 style="color: #2c3e50; text-align: center;">✅ Success Criteria</h4>
             <hr>
-            <p><strong>WILF (What I'm Looking For):</strong> {{ wilf_content }}</p>
+            <p><strong>WILF (What I'm Looking For):</strong> 1. Exactly TWO <mark style="background-color: yellow;">yellow complex sentences</mark>.<br><br>2. At least TWO <span style="color: blue;">blue sentence starters</span>.<br><br>3. Accurate use of the <strong>bold</strong> weekly vocabulary.</p>
         </div>
     </div>
 
@@ -310,13 +310,13 @@
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🛟 Support (Band 5.0 Target)</h4>
             <hr>
-            <p>{{ support_content }}</p>
+            <p>Sentence frames: <em>"I want to be a..."</em> and <em>"A doctor must..."</em></p>
         </div>
         <!-- Green Support -->
         <div class="floating-window half-width" style="border-top: 5px solid #27ae60; background-color: #eafaf1;">
             <h4 style="color: #2c3e50; text-align: center;">🚀 Stretch (Band 6.0+ Target)</h4>
             <hr>
-            <p>{{ stretch_content }}</p>
+            <p>Use formal vocabulary to describe job responsibilities and career paths.</p>
         </div>
     </div>
 
@@ -367,20 +367,20 @@
     <!-- Reduced margin-bottom of h2 above to save space -->
 
     <!-- Red Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ grammar_title }}</strong> {{ grammar_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Modal Verbs of Obligation</strong> <br>• <strong>Must:</strong> Strong internal obligation (I must study).<br>• <strong>Have to:</strong> External obligation/rule (I have to wear a uniform).<br>• <strong>Should:</strong> Advice (You should sleep early).<br><span style="color: #7f8c8d; font-size: 0.9em;">情态动词：Must (主观义务), Have to (客观规定), Should (建议)。</span></p>
         </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window {% if week_number != 2 %}flex-expand{% endif %}" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
         <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
         <div style="font-size: 0.95em; line-height: 1.6;">
             <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
-            <p style="margin: 0 0 5px 0;"><strong>{{ pronunciation_title }}</strong> {{ pronunciation_content.replace('<br><br>', '<br>') }}</p>
+            <p style="margin: 0 0 5px 0;"><strong>Silent Letters</strong> <br>Be careful with silent letters! Do not pronounce the letters in brackets:<br>• <em>Colleag(u)e</em><br>• <em>Resig(n)</em><br>• <em>Wri(t)e</em><br><span style="color: #7f8c8d; font-size: 0.9em;">不发音字母：注意单词中不发音的字母，如 Colleague 中的 ue，Resign 中的 g。</span></p>
         </div>
     </div>
 
@@ -392,19 +392,37 @@
             <tr><th style="padding: 5px; border: 1px solid #bdc3c7;">English Word</th><th style="padding: 5px; border: 1px solid #bdc3c7;">Chinese Meaning</th></tr>
             </thead>
             <tbody>
-            {% for row in vocab_rows %}
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>{{ row.word }}</strong> ({{ row.type }})</td><td style="padding: 5px; border: 1px solid #bdc3c7; {% if week_number == 2 %}font-size: 0.8em;{% endif %}">{{ row.meaning }}</td></tr>
-            {% endfor %}
 
-            {% if recycled_words_note and recycled_words_note.strip() %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: {{ recycled_words_note }}</td></tr>
-            {% endif %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Profession</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">职业 / 专业</td></tr>
 
-            {% for idiom in idioms %}
-            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom {{ loop.index }}: {{ idiom.phrase }}</strong> ({{ idiom.meaning }})
-                <br><em>Explanation:</em> {{ idiom.explanation }}
-                <br><em>Example:</em> {{ idiom.example }}</td></tr>
-            {% endfor %}
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Colleague</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">同事</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Candidate</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">候选人 / 应聘者</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Promotion</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">晋升 / 升职</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Resign</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">辞职</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Ambitious</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">有野心的 / 雄心勃勃的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Motivated (Recycled)</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">有积极性的 / 动力十足的</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Qualification (Recycled)</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">资格证书 / 学历</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (Included in list above)</td></tr>
+
+
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Learn the ropes</strong> (摸清门道 / 熟悉业务)
+                <br><em>Explanation:</em> 学习如何做某项工作或掌握基本窍门。
+                <br><em>Example:</em> It took me a few weeks to learn the ropes at my new part-time job.</td></tr>
+
+            <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 2: Climb the corporate ladder</strong> (步步高升 / 职场晋阶)
+                <br><em>Explanation:</em> 在公司或职场中逐步晋升到更高的职位。
+                <br><em>Example:</em> He works very hard every day because he wants to climb the corporate ladder.</td></tr>
+
             </tbody>
         </table>
     </div>
@@ -416,9 +434,13 @@
     <div class="floating-window" style="border-left: 6px solid #8e44ad; background-color: #f5eef8;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 4. Warm-Up Questions (10 mins)</h4>
         <ol style="margin-bottom: 0; padding-left: 20px;">
-            {% for q in warmup_questions %}
-            <li>{{ q }}</li>
-            {% endfor %}
+
+            <li>(Section 5 Question) <strong>What <em>profession</em> would you like to have in the future?</strong></li>
+
+            <li>Do you need a high <strong>qualification</strong> to be a doctor? (Recycled)</li>
+
+            <li>Are you an <strong>ambitious</strong> person?</li>
+
         </ol>
     </div>
 
@@ -426,35 +448,46 @@
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
-            {{ transcoded_input }}
+            <span style="color: blue;">To be honest,</span> choosing a future <strong>profession</strong> is difficult. <span style="color: blue;">In my opinion,</span> being a doctor is a noble job, but you <strong>have to</strong> study for many years. <span style="color: blue;">Also,</span> you <strong>must</strong> get a high <strong>qualification</strong> from a university. <mark style="background-color: yellow;">If you are <strong>motivated</strong> and hardworking, you can become a successful <strong>candidate</strong> for the job.</mark> <span style="color: blue;">However,</span> some people just want to <strong>climb the corporate ladder</strong> and get a <strong>promotion</strong> quickly. <span style="color: blue;">Personally,</span> I am <strong>ambitious</strong>, but I also want to help people. <mark style="background-color: yellow;">Ideally, I would like to work with a friendly <strong>colleague</strong> who can help me <strong>learn the ropes</strong>.</mark> <span style="color: blue;">Finally,</span> I would never <strong>resign</strong> if I loved my job.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> What job do you want to do in the future?</li>
+                <li><strong>(Hard)</strong> What are the most important skills for a successful career?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
         <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 6. Circuit Prompt & Spider Diagram (5 mins)</h4>
-        <p style="margin:0;"><strong>{{ circuit_prompt_intro }}</strong></p>
+        <p style="margin:0;"><strong>Describe a job you would like to have. You should say:</strong></p>
         <ul style="margin: 5px 0; padding-left: 20px;">
-            {% for point in circuit_prompt_points %}
-            <li>{{ point }}</li>
-            {% endfor %}
+
+            <li>What the job is.</li>
+
+            <li>What qualifications you need.</li>
+
+            <li>Why you want this job.</li>
+
         </ul>
 
         <div class="spider-container">
             <div class="spider-quadrant quad-tl">
-                {{ spider_leg_1 }}
+                Job Title
             </div>
             <div class="spider-quadrant quad-tr">
-                {{ spider_leg_2 }}
+                Qualifications Needed
             </div>
             <div class="spider-quadrant quad-bl">
-                {{ spider_leg_3 }}
+                Reasons
             </div>
             <div class="spider-quadrant quad-br">
-                {{ spider_leg_4 }}
+                Duties
             </div>
             <div class="spider-center">
-                {{ spider_center }}
+                Dream Job
             </div>
         </div>
     </div>
@@ -466,7 +499,7 @@
     <div class="floating-window" style="border: 1px solid #f39c12; border-left: 6px solid #f39c12; background-color: #fef9e7;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 7. Model Answer (5 mins)</h4>
         <p style="line-height: 1.6; font-size: 1.05em; margin-bottom: 0;">
-            {{ model_answer }}
+            <span style="color: blue;">Well,</span> I would love to be a software engineer. <span style="color: blue;">Actually,</span> this <strong>profession</strong> is very popular nowadays. <span style="color: blue;">To be honest,</span> you <strong>have to</strong> be very smart and patient to write code. <mark style="background-color: yellow;">Because technology is changing fast, you <strong>must</strong> obtain a high <strong>qualification</strong> in Computer Science.</mark> <span style="color: blue;">Also,</span> I am very <strong>motivated</strong> to create new apps. <span style="color: blue;">In the future,</span> I hope to work with a brilliant <strong>colleague</strong> at a big tech company. <mark style="background-color: yellow;">If I work hard, I might get a <strong>promotion</strong> and become a manager.</mark> <span style="color: blue;">To sum up,</span> I am very <strong>ambitious</strong> about this career path.
         </p>
     </div>
 
@@ -489,8 +522,15 @@
     <!-- Blue Section -->
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ listener_task_content }}</p>
-    </div>
+        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" when you hear their <mark style="background-color: yellow;">Yellow complex sentences</mark>!<br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</p>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Do you think you would like to work in an office?</li>
+                <li><strong>(Hard)</strong> Why do some people change their jobs many times in their lives?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -498,14 +538,14 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;">{{ fast_finisher_question }}</p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">How is the corporate hierarchy changing in modern companies?</p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
-            <p style="font-size: 0.9em; margin-bottom: 10px;">{{ exit_ticket_content }}</p>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Modals):</strong> Circle the correct option.<br><br>1. You ( must / should ) wear a seatbelt. (Law)<br><br>2. You ( must / should ) see that movie. (Advice)<br><br>3. I ( have to / should ) go to school today. (Rule)</p>
             <div class="feedback-box">
                 <strong>Errors we fixed on the board:</strong>
             </div>
@@ -519,12 +559,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week {{ week_number }} Model Answers with vocabulary and repeat until you can repeat each sentence precisely. {{ pre_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 7 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Pay attention to the silent letters in 'colleague' and 'resign'.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. {{ post_homework_task }}</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. Record a 2-minute audio answering this week's prompt. <strong>Requirement:</strong> Use 2 complex sentences and 'Must/Have to'.</p>
         </div>
     </div>
 </div>

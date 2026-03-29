@@ -1,0 +1,442 @@
+{
+    "week_1": {
+        "unit_title": "Leisure & Free Time ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite way to relax on the weekend?",
+            "hard": "Why do you think high school students have so little free time nowadays?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Who do you usually spend your free time with?",
+            "hard": "How does playing sports help people deal with stress?"
+        }
+    },
+    "week_2": {
+        "unit_title": "TV & Media ",
+        "section_5_transcoded": {
+            "easy": "What kind of TV shows do you like to watch?",
+            "hard": "How has the internet changed the way people watch TV?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How much time do you spend watching videos every day?",
+            "hard": "Do you think young people spend too much time on their phones? Why?"
+        }
+    },
+    "week_3": {
+        "unit_title": "Food & Diet ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite food to eat?",
+            "hard": "Why is it important to have a balanced diet?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you prefer eating at home or in a restaurant?",
+            "hard": "How does traditional food in your country compare to fast food?"
+        }
+    },
+    "week_4": {
+        "unit_title": "Transport ",
+        "section_5_transcoded": {
+            "easy": "How do you usually get to school?",
+            "hard": "What are the biggest traffic problems in your city?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you like taking the bus or subway?",
+            "hard": "How can public transportation be improved in the future?"
+        }
+    },
+    "week_5": {
+        "unit_title": "Holidays ",
+        "section_5_transcoded": {
+            "easy": "Where did you go for your last holiday?",
+            "hard": "Why do people like traveling to different countries?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "What do you like to do during summer vacation?",
+            "hard": "How does tourism help the local economy?"
+        }
+    },
+    "week_6": {
+        "unit_title": "Learning/Education ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite subject in school?",
+            "hard": "What makes a good teacher?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you like studying alone or with friends?",
+            "hard": "How is studying in high school different from university?"
+        }
+    },
+    "week_7": {
+        "unit_title": "Careers ",
+        "section_5_transcoded": {
+            "easy": "What job do you want to do in the future?",
+            "hard": "What are the most important skills for a successful career?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you think you would like to work in an office?",
+            "hard": "Why do some people change their jobs many times in their lives?"
+        }
+    },
+    "week_8": {
+        "unit_title": "Work & Money ",
+        "section_5_transcoded": {
+            "easy": "Do you think it is important to save money?",
+            "hard": "What is more important: a high salary or a job you love?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "What do you usually spend your pocket money on?",
+            "hard": "How should parents teach their children about managing money?"
+        }
+    },
+    "week_9": {
+        "unit_title": "Sports ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite sport to play or watch?",
+            "hard": "Why are sports important for young people?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How often do you exercise every week?",
+            "hard": "Do you think professional athletes are paid too much money?"
+        }
+    },
+    "week_10": {
+        "unit_title": "People/Relationships ",
+        "section_5_transcoded": {
+            "easy": "Who is your best friend?",
+            "hard": "What qualities make a good friendship?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you spend more time with your family or friends?",
+            "hard": "How does social media affect relationships between people today?"
+        }
+    },
+    "week_11": {
+        "unit_title": "Organizations/Volunteering ",
+        "section_5_transcoded": {
+            "easy": "Have you ever helped a charity or done volunteer work?",
+            "hard": "Why is volunteering important for the community?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you like to help protect the environment?",
+            "hard": "How can schools encourage students to do volunteer work?"
+        }
+    },
+    "week_12": {
+        "unit_title": "Achievements ",
+        "section_5_transcoded": {
+            "easy": "What is something you are proud of doing?",
+            "hard": "How does failing help people to eventually succeed?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Who is a successful person you admire?",
+            "hard": "Do you think success is mostly about hard work or good luck?"
+        }
+    },
+    "week_13": {
+        "unit_title": "Environment ",
+        "section_5_transcoded": {
+            "easy": "What is the weather like today?",
+            "hard": "What are the biggest environmental problems in your country?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you recycle plastic and paper at home?",
+            "hard": "What can individuals do to reduce pollution in their daily lives?"
+        }
+    },
+    "week_14": {
+        "unit_title": "Technology ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite electronic device?",
+            "hard": "How has technology changed the way we study?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How often do you use your smartphone?",
+            "hard": "What are the negative effects of using too much technology?"
+        }
+    },
+    "week_15": {
+        "unit_title": "Culture/Customs ",
+        "section_5_transcoded": {
+            "easy": "What is your favorite traditional festival?",
+            "hard": "Why is it important to protect traditional culture?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "What traditional food do you eat during holidays?",
+            "hard": "How does globalization affect local customs?"
+        }
+    },
+    "week_16": {
+        "unit_title": "Modern Living/City vs Country ",
+        "section_5_transcoded": {
+            "easy": "Do you live in a city or the countryside?",
+            "hard": "What are the main advantages of living in a big city?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you prefer quiet places or busy places?",
+            "hard": "Why are many young people moving from the country to the city?"
+        }
+    },
+    "week_17": {
+        "unit_title": "Fashion/Shopping ",
+        "section_5_transcoded": {
+            "easy": "Do you like going shopping for clothes?",
+            "hard": "How does advertising influence what people buy?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "What is your favorite style of clothing?",
+            "hard": "Why do some people care so much about famous clothing brands?"
+        }
+    },
+    "week_18": {
+        "unit_title": "Entertainment/Arts ",
+        "section_5_transcoded": {
+            "easy": "What kind of music do you like listening to?",
+            "hard": "Why is art important for society?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you enjoy going to the cinema or theater?",
+            "hard": "How has the internet changed the music and movie industries?"
+        }
+    },
+    "week_19": {
+        "unit_title": "Health/Medicine ",
+        "section_5_transcoded": {
+            "easy": "What do you do to stay healthy?",
+            "hard": "What are the biggest health challenges for people living in modern cities?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Do you make sure to get enough sleep every night?",
+            "hard": "How can schools promote better physical and mental health for students?"
+        }
+    },
+    "week_20": {
+        "unit_title": "The Future ",
+        "section_5_transcoded": {
+            "easy": "What do you hope to do next year?",
+            "hard": "How do you think the world will change in the next 50 years?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Are you excited or worried about the future?",
+            "hard": "What future inventions do you think will be the most useful?"
+        }
+    },
+    "week_21": {
+        "unit_title": "Leisure & Free Time (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite way to relax on the weekend?",
+            "hard": "What do you consider to be the main reasons do you think high school students have so little free time nowadays?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Who do you usually spend your free time with?",
+            "hard": "In what ways does playing sports help people deal with stress?"
+        }
+    },
+    "week_22": {
+        "unit_title": "TV & Media (Advanced)",
+        "section_5_transcoded": {
+            "easy": "What kind of TV shows do you like to watch?",
+            "hard": "How has the internet changed the way people watch TV?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How much time do you spend watching videos every day?",
+            "hard": "Do you think young people spend too much time on their phones? For what reasons?"
+        }
+    },
+    "week_23": {
+        "unit_title": "Food & Diet (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite food to eat?",
+            "hard": "What do you consider to be the main reasons is it important to have a balanced diet?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you prefer eating at home or in a restaurant?",
+            "hard": "In what ways does traditional food in your country compare to fast food?"
+        }
+    },
+    "week_24": {
+        "unit_title": "Transport (Advanced)",
+        "section_5_transcoded": {
+            "easy": "In what ways do you usually get to school?",
+            "hard": "What do you consider to be the biggest traffic problems in your city?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you like taking the bus or subway?",
+            "hard": "In what ways can public transportation be improved in the future?"
+        }
+    },
+    "week_25": {
+        "unit_title": "Holidays (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Where did you go for your last holiday?",
+            "hard": "What do you consider to be the main reasons do people like traveling to different countries?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Can you share what do you like to do during summer vacation?",
+            "hard": "In what ways does tourism help the local economy?"
+        }
+    },
+    "week_26": {
+        "unit_title": "Learning/Education (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite subject in school?",
+            "hard": "What makes a good teacher?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you like studying alone or with friends?",
+            "hard": "In what ways is studying in high school different from university?"
+        }
+    },
+    "week_27": {
+        "unit_title": "Careers (Advanced)",
+        "section_5_transcoded": {
+            "easy": "What job do you want to do in the future?",
+            "hard": "What do you consider to be the most important skills for a successful career?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you think you would like to work in an office?",
+            "hard": "For what reasons do some people change their jobs many times in their lives?"
+        }
+    },
+    "week_28": {
+        "unit_title": "Work & Money (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you explain if you think it is important to save money?",
+            "hard": "What is more important: a high salary or a job you love?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Can you share what do you usually spend your pocket money on?",
+            "hard": "In what ways should parents teach their children about managing money?"
+        }
+    },
+    "week_29": {
+        "unit_title": "Sports (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite sport to play or watch?",
+            "hard": "What do you consider to be the main reasons are sports important for young people?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How often do you exercise every week?",
+            "hard": "Do you think professional athletes are paid too much money?"
+        }
+    },
+    "week_30": {
+        "unit_title": "People/Relationships (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Who is your best friend?",
+            "hard": "What qualities make a good friendship?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you spend more time with your family or friends?",
+            "hard": "In what ways does social media affect relationships between people today?"
+        }
+    },
+    "week_31": {
+        "unit_title": "Organizations/Volunteering (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Have you ever helped a charity or done volunteer work?",
+            "hard": "What do you consider to be the main reasons is volunteering important for the community?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you like to help protect the environment?",
+            "hard": "In what ways can schools encourage students to do volunteer work?"
+        }
+    },
+    "week_32": {
+        "unit_title": "Achievements (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe something you are proud of doing?",
+            "hard": "How does failing help people to eventually succeed?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Who is a successful person you admire?",
+            "hard": "Do you think success is mostly about hard work or good luck?"
+        }
+    },
+    "week_33": {
+        "unit_title": "Environment (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe the weather like today?",
+            "hard": "What do you consider to be the biggest environmental problems in your country?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you recycle plastic and paper at home?",
+            "hard": "What can individuals do to reduce pollution in their daily lives?"
+        }
+    },
+    "week_34": {
+        "unit_title": "Technology (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite electronic device?",
+            "hard": "How has technology changed the way we study?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "How often do you use your smartphone?",
+            "hard": "What are the negative effects of using too much technology?"
+        }
+    },
+    "week_35": {
+        "unit_title": "Culture/Customs (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you describe your favorite traditional festival?",
+            "hard": "What do you consider to be the main reasons is it important to protect traditional culture?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Can you share what traditional food do you eat during holidays?",
+            "hard": "In what ways does globalization affect local customs?"
+        }
+    },
+    "week_36": {
+        "unit_title": "Modern Living/City vs Country (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you explain if you live in a city or the countryside?",
+            "hard": "What do you consider to be the main advantages of living in a big city?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you prefer quiet places or busy places?",
+            "hard": "For what reasons are many young people moving from the country to the city?"
+        }
+    },
+    "week_37": {
+        "unit_title": "Fashion/Shopping (Advanced)",
+        "section_5_transcoded": {
+            "easy": "Can you explain if you like going shopping for clothes?",
+            "hard": "How does advertising influence what people buy?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Can you share what is your favorite style of clothing?",
+            "hard": "For what reasons do some people care so much about famous clothing brands?"
+        }
+    },
+    "week_38": {
+        "unit_title": "Entertainment/Arts (Advanced)",
+        "section_5_transcoded": {
+            "easy": "What kind of music do you like listening to?",
+            "hard": "What do you consider to be the main reasons is art important for society?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you enjoy going to the cinema or theater?",
+            "hard": "In what ways has the internet changed the music and movie industries?"
+        }
+    },
+    "week_39": {
+        "unit_title": "Health/Medicine (Advanced)",
+        "section_5_transcoded": {
+            "easy": "What do you do to stay healthy?",
+            "hard": "What do you consider to be the biggest health challenges for people living in modern cities?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Would you say you make sure to get enough sleep every night?",
+            "hard": "In what ways can schools promote better physical and mental health for students?"
+        }
+    },
+    "week_40": {
+        "unit_title": "The Future (Advanced)",
+        "section_5_transcoded": {
+            "easy": "What do you hope to do next year?",
+            "hard": "How do you think the world will change in the next 50 years?"
+        },
+        "section_9_listener_feedback": {
+            "easy": "Are you excited or worried about the future?",
+            "hard": "What future inventions do you think will be the most useful?"
+        }
+    }
+}

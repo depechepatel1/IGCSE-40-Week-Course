@@ -23,7 +23,7 @@
             background: white;
             margin-bottom: 40px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            padding: 20mm;
+            padding: 15mm 20mm; /* Reduced top/bottom padding from 20mm to 15mm */
             box-sizing: border-box;
             position: relative;
             overflow: hidden;
@@ -47,72 +47,67 @@
 
         /* Cover Page Specific Styles */
         .cover-page {
-            /* Updated gradient for a softer, more professional look */
-            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background: url('https://res.cloudinary.com/daujjfaqg/image/upload/v1771567490/Textbook_Cover_usinxj.jpg') no-repeat center center;
+            background-size: cover;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Vertically center the content */
-            text-align: center;
+            justify-content: center;
             border: 1px solid #ddd;
+            padding: 0 !important; /* Override default page padding */
         }
         .cover-content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            /* Wrap content in a floating window with pastel background */
-            background: #fdfefe; /* Very light off-white/cyan tint */
-            border: 1px solid #d5dbdb;
-            border-radius: 15px;
-            padding: 50px 40px;
-            margin: 40px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Softer, larger shadow */
+            justify-content: flex-end; /* Align content to the bottom */
+            align-items: flex-end; /* Align content to the right */
+            text-align: right;
+            padding: 50px 20mm 20mm 20mm !important; /* Right/Bottom padding = 20mm (2cm) from edge */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* Shared style for all text on cover page to ensure bold black with white border */
+        .cover-content, .cover-title, .cover-subtitle, .cover-week, .target-band, .cover-footer, .cover-content p {
+            color: #000000 !important;
+            font-weight: 700 !important;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
         }
         .cover-title {
-            font-family: 'Playfair Display', serif; /* Elegant serif for title */
-            font-size: 2.8em; /* Reduced size */
-            color: #2c3e50; /* Dark slate */
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-            font-weight: 700;
-            letter-spacing: 1px;
-            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8em;
+            margin-bottom: 5px; /* Reduced from 10px */
+            line-height: 1.0; /* Compacted line height */
         }
         .cover-subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.6em;
-            color: #e67e22; /* Muted orange/carrot instead of harsh red */
-            margin-bottom: 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.0em;
+            margin-bottom: 30px;
+            font-style: italic;
         }
         .cover-week {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4em;
-            color: #34495e;
-            background: #ecf0f1; /* Light gray pill */
-            padding: 12px 35px;
-            border-radius: 50px;
-            margin-bottom: 45px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            border: 1px solid #bdc3c7;
+            margin-bottom: 10px; /* Reduced from 20px */
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .target-band {
-            font-size: 1.1em;
-            color: #7f8c8d;
-            font-style: italic;
-            margin-top: 10px;
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 5px; /* Reduced from 10px */
+            border-top: 2px solid #000;
+            padding-top: 5px; /* Reduced from 15px */
+            display: inline-block;
         }
         .cover-footer {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9em;
-            color: #95a5a6;
-            margin-top: 40px;
-            font-weight: 600;
+            margin-top: 15px; /* Reduced from 30px to bring closer to text block */
+            margin-bottom: 0; /* Remove bottom margin, handled by container padding */
             letter-spacing: 1px;
             text-transform: uppercase;
+            align-self: center; /* Force center alignment for footer */
+            text-align: center;
         }
 
         /* Standard Content Styles */
@@ -124,6 +119,14 @@
             background: white; 
             box-shadow: 5px 5px 15px rgba(0,0,0,0.15); /* Large drop shadow */
             page-break-inside: avoid;
+        }
+
+        /* Flex expand class for sections 1 and 2 */
+        .flex-expand {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically if expanded */
         }
         
         /* Note Paper Style for Page 2 */
@@ -261,11 +264,13 @@
 <!-- PAGE 1: COVER PAGE -->
 <div class="a4-page cover-page">
     <div class="cover-content">
-        <h1 class="cover-title">IGCSE Speaking /<br>IELTS Prep Course</h1>
+        <h1 class="cover-title">IGCSE Speaking<br>IELTS Prep Course</h1>
+        <p style="font-size: 1.2em; margin-top: 0; margin-bottom: 10px; font-family: 'Montserrat', sans-serif;">Adapted from Cambridge IGCSE ESL by Peter Lucantoni</p>
         <div class="cover-week">Week 1: Leisure & Free Time (Unit 1)</div>
         
-        <h2 class="cover-subtitle">Semester 1: Foundation Phase</h2>
-        <p class="target-band">Band 5.0 ➔ 6.0 Target</p>
+        <!-- Removed Semester Title as requested -->
+
+        <p class="target-band">IELTS Band 5 - 6</p>
         
         <div class="cover-footer">
             © Jinhua New Oriental Academy English Department Curriculum
@@ -283,7 +288,7 @@
 
 <!-- PAGE 3: LESSON PLAN -->
 <div class="a4-page">
-    <h2 style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">QTS Aligned Teacher Lesson Plan</h2>
+    <h2 style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 5px; margin-bottom: 10px; margin-top: 0;">QTS Aligned Teacher Lesson Plan</h2>
 
     <div class="flex-row">
         <!-- Blue Support -->
@@ -358,16 +363,25 @@
 
 <!-- PAGE 4: HANDOUT PART 1 (Sections 1-3) -->
 <div class="a4-page">
+    <h2 style="color: #2c3e50; border-bottom: 3px solid #e74c3c; padding-bottom: 5px; margin-bottom: 5px; margin-top: 0;">Student Handout</h2>
+    <!-- Reduced margin-bottom of h2 above to save space -->
+
     <!-- Red Section -->
-    <div class="floating-window" style="border-left: 6px solid #e74c3c; background-color: #fadbd8;">
-        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
-        <p style="margin:0;"><strong>Adverbs of Frequency & Gerunds</strong> <br><br>• <strong>Adverbs:</strong> Place them <em>before</em> the main verb but <em>after</em> the 'be' verb (e.g., <em>I usually play... / I am always happy...</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">副词：放在实义动词之前，但在be动词之后 (例如: I usually play... / I am always happy...)</span><br><br>• <strong>Gerunds:</strong> Verbs expressing preference (enjoy, prefer, love) are followed by a V-ing gerund (e.g., <em>I enjoy playing badminton...</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">动名词：表达喜好的动词 (enjoy, prefer, love) 后面接 V-ing 形式 (例如: I enjoy playing badminton...)</span></p>
+    <div class="floating-window flex-expand" style="border-left: 6px solid #e74c3c; background-color: #fadbd8; padding: 10px 15px;">
+        <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 1. Weekly Grammar Point (5 mins)</h4>
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
+            <p style="margin: 0 0 5px 0;"><strong>Adverbs of Frequency & Gerunds</strong> <br>• <strong>Adverbs:</strong> Place them <em>before</em> the main verb but <em>after</em> the 'be' verb (e.g., <em>I usually play... / I am always happy...</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">副词：放在实义动词之前，但在be动词之后 (例如: I usually play... / I am always happy...)</span><br>• <strong>Gerunds:</strong> Verbs expressing preference (enjoy, prefer, love) are followed by a V-ing gerund (e.g., <em>I enjoy playing badminton...</em>).<br><span style="color: #7f8c8d; font-size: 0.9em;">动名词：表达喜好的动词 (enjoy, prefer, love) 后面接 V-ing 形式 (例如: I enjoy playing badminton...)</span></p>
+        </div>
     </div>
 
     <!-- Orange Section -->
-    <div class="floating-window" style="border-left: 6px solid #f39c12; background-color: #fdebd0;">
-        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
-        <p style="margin:0;"><strong>Connected Speech (Linking Consonant to Vowel)</strong> <br><br>To sound like a native speaker, do not pause between words if one ends in a consonant sound and the next begins with a vowel sound. Slide them together!<br><span style="color: #7f8c8d; font-size: 0.9em;">为了听起来像母语者，如果一个单词以辅音结尾，下一个单词以元音开头，请不要停顿。把它们连起来读！</span><br><br>• Say: <strong>have‿a blast</strong> (Sounds like: <em>ha - va - blast</em>)<br><br>• Say: <strong>couch‿potato</strong> (Smoothly connect the <em>ch</em> into the <em>p</em>)</p>
+    <div class="floating-window flex-expand" style="border-left: 6px solid #f39c12; background-color: #fdebd0; padding: 10px 15px;">
+        <h4 style="margin: 0 0 3px 0; color: #2c3e50;">Section 2. Weekly Pronunciation Point (3 mins)</h4>
+        <div style="font-size: 0.95em; line-height: 1.6;">
+            <!-- Increased line-height from 1.3 to 1.6 for less cramped text -->
+            <p style="margin: 0 0 5px 0;"><strong>Connected Speech (Linking Consonant to Vowel)</strong> <br>To sound like a native speaker, do not pause between words if one ends in a consonant sound and the next begins with a vowel sound. Slide them together!<br><span style="color: #7f8c8d; font-size: 0.9em;">为了听起来像母语者，如果一个单词以辅音结尾，下一个单词以元音开头，请不要停顿。把它们连起来读！</span><br>• Say: <strong>have‿a blast</strong> (Sounds like: <em>ha - va - blast</em>)<br>• Say: <strong>couch‿potato</strong> (Smoothly connect the <em>ch</em> into the <em>p</em>)</p>
+        </div>
     </div>
 
     <!-- Blue Section -->
@@ -379,20 +393,24 @@
             </thead>
             <tbody>
             
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Pastime</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">消遣 / 娱乐活动</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Pastime</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">消遣 / 娱乐活动</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Unwind</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">放松 / 解压</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Fascinating</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">迷人的 / 极好的</td></tr>
             
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Unwind</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">放松 / 解压</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Participate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">参与 / 参加</td></tr>
             
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Fascinating</strong> (Adj)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">迷人的 / 极好的</td></tr>
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Enthusiast</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">狂热爱好者</td></tr>
+
+            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Recreation</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7; ">娱乐 / 休闲</td></tr>
             
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Participate</strong> (V)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">参与 / 参加</td></tr>
             
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Enthusiast</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">狂热爱好者</td></tr>
-            
-            <tr><td style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Recreation</strong> (N)</td><td style="padding: 5px; border: 1px solid #bdc3c7;">娱乐 / 休闲</td></tr>
             
             <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7; color: #7f8c8d; font-style: italic;">Recycled Words: (None for Week 1)</td></tr>
             
+
+
             <tr><td colspan="2" style="padding: 5px; border: 1px solid #bdc3c7;"><strong>Idiom 1: Couch potato</strong> (电视迷 / 懒骨头)
                 <br><em>Explanation:</em> 指喜欢整天坐在沙发上看电视、不爱运动的人。
                 <br><em>Example:</em> On weekends, I become a couch potato and watch TV shows all day.</td></tr>
@@ -424,11 +442,18 @@
 
     <!-- Teal Section (Input) -->
     <div class="floating-window" style="border: 1px solid #1abc9c; border-left: 6px solid #1abc9c; padding: 15px; margin-bottom: 15px; border-radius: 8px; background-color: #e8f8f5; box-shadow: 5px 5px 15px rgba(0,0,0,0.15);">
-        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Transcoded Input (3 mins)</h4>
+        <h4 style="margin: 0 0 5px 0; color: #2c3e50;">Section 5. Shadowing text adapted from the Cambridge IGCSE ESL Coursebook (3 mins)</h4>
         <p style="line-height: 1.4; font-size: 1em; margin-bottom: 0;">
             <span style="color: blue;">To be honest,</span> finding free time is hard for Grade 10 students. <span style="color: blue;">Nowadays,</span> our schedules are very busy with heavy homework loads. <span style="color: blue;">However,</span> it is still very important to <strong>unwind</strong>. <span style="color: blue;">Usually,</span> many of my classmates act like a <strong>couch potato</strong> on weekends. They just watch videos online and sleep all day. <span style="color: blue;">Personally,</span> I prefer active <strong>recreation</strong>. <span style="color: blue;">For example,</span> I am a huge basketball <strong>enthusiast</strong>, so I always <strong>participate</strong> in school matches. <mark style="background-color: yellow;">When I play sports with my friends, we always <strong>have a blast</strong>.</mark> <span style="color: blue;">Overall,</span> staying active is a truly <strong>fascinating pastime</strong>.
         </p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> What is your favorite way to relax on the weekend?</li>
+                <li><strong>(Hard)</strong> Why do you think high school students have so little free time nowadays?</li>
+            </ul>
+        </div></div>
 
     <!-- Dark Orange Section -->
     <div class="floating-window section-spider" style="border-left: 6px solid #d35400; background-color: #fce6d4;">
@@ -494,7 +519,14 @@
     <div class="floating-window" style="border-left: 6px solid #3498db; background-color: #ebf5fb;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 9. Listener Task (25 mins)</h4>
         <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Peer Assessment:</strong> Tally how many <span style="color: blue;">Blue starters</span> your partner uses.<br><br><strong>Action:</strong> Give them a "thumbs-up" the exact moment you hear them use their <mark style="background-color: yellow;">Yellow complex sentence</mark>!<br><br><br><strong>Tally:</strong> [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]<br><br><strong>Support:</strong> If your partner freezes, help them with these starters:<br><em>"My favorite pastime is ____ because..."</em><br><em>"I usually participate in ____."</em></p>
-    </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #bdc3c7; font-size: 0.9em;">
+            <p style="margin: 0 0 5px 0;"><strong>Follow-up Questions:</strong></p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 5px;"><strong>(Easy)</strong> Who do you usually spend your free time with?</li>
+                <li><strong>(Hard)</strong> How does playing sports help people deal with stress?</li>
+            </ul>
+        </div></div>
 </div>
 
 <!-- PAGE 7: HANDOUT PART 4 (Sections 10-13) -->
@@ -502,12 +534,12 @@
     <!-- Purple Section -->
     <div class="floating-window" style="border-left: 6px solid #9b59b6; background-color: #f5eef8;">
         <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 10. Differentiation Stretch (Fast Finishers)</h4>
-        <p style="font-size: 0.9em; margin-bottom: 0;"><strong>Fast Finisher Question:</strong> If your partner finishes speaking before the timer runs out, ask them this Part 3 Question: <br><br><br><em>"Do you think teenagers today have less free time than in the past? Why?"</em></p>
+        <p style="font-size: 0.9em; margin-bottom: 0;">If your partner finishes speaking before the timer runs out, ask them this Part 3 Question: <br><br><br><em>"Do you think teenagers today have less free time than in the past? Why?"</em></p>
     </div>
 
     <!-- Orange Section (Exit) -->
     <div class="floating-window section-exit" style="border-left: 6px solid #e67e22; background-color: #fce6d4;">
-        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. What did you learn today? (10 mins)</h4>
+        <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Section 11. Exit Ticket (10 mins)</h4>
         <div class="exit-content-wrapper">
             <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Fix the Error (Play vs. Do vs. Go):</strong> Write the correct verb next to the sport.<br><br><br><br>1. ___________ basketball &nbsp;&nbsp;&nbsp;&nbsp; 2. ___________ yoga &nbsp;&nbsp;&nbsp;&nbsp; 3. ___________ swimming</p>
             <div class="feedback-box">
@@ -523,12 +555,12 @@
         <!-- Pink Section -->
         <div class="floating-window half-width" style="border: 1px solid #fb7299; border-left: 6px solid #fb7299; background: #fff0f5;">
             <h4 style="margin: 0 0 10px 0; color: #fb7299;">Section 12. Pre-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the <strong>Week 2 Vocabulary and Model Answer</strong>. Shadow (repeat) their pronunciation, focusing heavily on copying the intonation of their sentence starters.</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Shadowing (10 Mins):</strong> Open the App. Listen to the Week 1 Model Answers with vocabulary and repeat until you can repeat each sentence precisely. Shadow (repeat) their pronunciation, focusing heavily on copying the intonation of their sentence starters.</p>
         </div>
         <!-- Green Section -->
         <div class="floating-window half-width" style="border: 1px solid #27ae60; border-left: 6px solid #27ae60; background: #e8f8f5;">
             <h4 style="margin: 0 0 10px 0; color: #27ae60;">Section 13. Post-Homework Task</h4>
-            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Open the App. Record a 2-minute audio answering this week's IELTS prompt. <strong>Requirement:</strong> You MUST use 1 complex sentence, and this week's grammar point (Adverbs of frequency).</p>
+            <p style="font-size: 0.85em; margin-bottom: 0;"><strong>App Recording (10 Mins):</strong> Record a 2-minute audio answering this week's Section 6 question. With the remaining time, practice in the pronunciation section of the APP repeating tongue twisters. <strong>Requirement:</strong> You MUST use 1 complex sentence, and this week's grammar point (Adverbs of frequency).</p>
         </div>
     </div>
 </div>
